@@ -4,7 +4,7 @@
 <br/>
 使用tp5.0+layui+小程序
 <br/>
-github地址：https://github.com/songbo236589/swhop
+github地址：https://github.com/songbo236589/wShop
 <br/>
 wx_web中存放的是小程序端代码
 <br/>
