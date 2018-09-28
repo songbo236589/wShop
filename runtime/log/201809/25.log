@@ -1,0 +1,144 @@
+---------------------------------------------------------------
+[ 2018-09-25T23:36:15+08:00 ] 172.17.0.24 71.6.158.166 GET /robots.txt
+[ info ] 39.107.111.90/robots.txt [运行时间：0.015040s][吞吐率：66.49req/s] [内存消耗：1,672.28kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000116s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T23:36:15+08:00 ] 172.17.0.24 71.6.158.166 GET /robots.txt
+[ info ] 39.107.111.90/robots.txt [运行时间：0.015639s][吞吐率：63.94req/s] [内存消耗：1,672.32kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000123s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T23:36:16+08:00 ] 172.17.0.24 71.6.158.166 GET /sitemap.xml
+[ info ] 39.107.111.90/sitemap.xml [运行时间：0.015014s][吞吐率：66.60req/s] [内存消耗：1,672.29kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000119s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sitemap.xml',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T23:36:16+08:00 ] 172.17.0.24 71.6.158.166 GET /sitemap.xml
+[ info ] 39.107.111.90/sitemap.xml [运行时间：0.015943s][吞吐率：62.72req/s] [内存消耗：1,672.32kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000149s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T23:36:18+08:00 ] 172.17.0.24 71.6.158.166 GET /.well-known/security.txt
+[ info ] 39.107.111.90/.well-known/security.txt [运行时间：0.014994s][吞吐率：66.69req/s] [内存消耗：1,672.39kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '.well-known',
+    1 => 'security.txt',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T23:36:18+08:00 ] 172.17.0.24 71.6.158.166 GET /.well-known/security.txt
+[ info ] 39.107.111.90/.well-known/security.txt [运行时间：0.015746s][吞吐率：63.51req/s] [内存消耗：1,672.33kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000119s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

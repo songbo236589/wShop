@@ -1,0 +1,64 @@
+{include file="common/head"/}
+<div class="admin-main fadeInUp animated" ng-app="hd" ng-controller="ctrl">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{$title}</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane" name="angularForm">
+        <div class="layui-form-item">
+            <label class="layui-form-label">省级名称</label>
+            <div class="layui-input-4">
+                <input type="text" name="name" 
+				lay-verify="required"
+				maxlength="10"
+				required
+				ng-model="field.name"
+				placeholder="请输入省级名称" 
+				class="layui-input"/>
+			</div>
+		</div>	
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" id="submit" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                <a href="{:url('index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script src="__STATIC__/common/js/angular.min.js"></script>
+<script>
+	//创建model层
+    var m = angular.module('hd',[]);
+	//创建controller层  并添加作用域
+    m.controller('ctrl',['$scope',function($scope) {
+		//判断是否有值传入  （可以表示：添加和编辑）
+        $scope.field = '{$info}'!='null'?{$info}:{name:''};
+		//创建from表单提交
+        layui.use(['form', 'layer'], function () {
+            var form = layui.form, layer = layui.layer,$= layui.jquery;
+            //传入数据
+			form.on('submit(submit)', function (data) {
+				$("#submit").attr({ disabled: "disabled" });
+                loading = layer.load(1,{shade:[0.1,'#fff']});
+                // 提交到方法 默认为本身
+                //获取被修改的id
+				if($scope.field.id){
+					data.field.id = $scope.field.id;
+				}
+				//console.log(data.field);
+                //传入数据  获取回调值
+				$.post("", data.field, function (res) {
+                    layer.close(loading);
+                    if (res.errorCode == 8888) {
+                        layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+                            location.href = res.url;
+                        });
+                    }else{
+						$("#submit").removeAttr("disabled");
+                        layer.msg(res.msg, {time: 1800, icon: 2});
+                    }
+                });
+            })
+        });
+    }]);
+</script>

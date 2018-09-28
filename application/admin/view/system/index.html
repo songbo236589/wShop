@@ -1,0 +1,110 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>系统配置</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">网站名称</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="200" name="site_name" value="{$system.site_name}" lay-verify="site_name" placeholder="请输入网站名称" class="layui-input">
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">后台标题</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="200" name="background_title" value="{$system.background_title}" lay-verify="background_title" placeholder="请输入后台标题" class="layui-input">
+            </div>
+        </div>
+        
+		<div class="layui-form-item">
+            <label class="layui-form-label">登录图</label>
+            <input type="hidden" lay-verify="background_image" name="background_image" id="logo2" value="{$system.background_image}">
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="logoBtn2"><i class="icon icon-upload3"></i>点击上传</button>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" id="SLogo2">
+                        <p id="demoText2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn" id="submit" lay-submit="" lay-filter="sys">{:lang('submit')}</button>
+                
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script>
+    layui.use(['form', 'layer','upload'], function () {
+        var form = layui.form,layer = layui.layer,upload = layui.upload,$ = layui.jquery;
+		if("{$system.background_image}"){
+            SLogo2.src = "__PUBLIC__"+ "{$system.background_image}";
+        }
+		form.verify({
+				
+				site_name: function(value){  
+						if(value == ''){  
+							return '请输入网站名称！';  
+						}  
+					},
+				background_title: function(value){  
+						if(value == ''){  
+							return '请输入后台标题！';  
+						}  
+					},
+				background_image: function(value){  
+						if(value == ''){  
+							return '请添加登录图！';  
+						}  
+					}				
+				});
+		//普通图片上传    后台登录页背景图片
+        var uploadInst2 = upload.render({
+			elem: '#logoBtn2'
+            ,url: '{:url("UpFiles/upload")}'
+            ,before: function(obj){
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#SLogo2').attr('src', result); //图片链接（base64）
+                });
+            }
+            ,done: function(res){
+                    if(res.errorCode==8888){
+                        $('#logo2').val(res.url);
+						layer.msg(res.msg,{time:1000,icon:1});
+                    }else{
+						$('#SLogo2').attr('src','');
+                        layer.msg(res.msg,{time:2000,icon:2});
+                    }
+                }
+            
+        });
+        //提交监听
+        form.on('submit(sys)', function (data) {
+			$("#submit").attr({ disabled: "disabled" });
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            $.post("{:url('system/index')}",data.field,function(res){
+                layer.close(loading);
+                if(res.errorCode == 8888){
+                    layer.msg(res.msg,{icon: 1, time: 1000},function(){
+                        location.href = res.url;
+                    });
+                }else{
+					$("#submit").removeAttr("disabled");
+                    layer.msg(res.msg,{icon: 2, time: 1000});
+                }
+            });
+        })
+    })
+	
+
+</script>
+
+
+</body>
+</html>

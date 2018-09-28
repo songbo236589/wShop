@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>wShop</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+		<link rel="stylesheet" href="css/weui.min.css">
+		<link rel="stylesheet" href="css/jquery-weui.css">
+		<link rel="stylesheet" href="css/demos.css">
+		<!--公共的css-->
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body>
+		
+		<div id="app">
+			<!--页面初始化加载动画-->
+			<div class="loading" v-if="loadingHidden">
+				<div class="loading_box">
+					<div class="loading3 loading3_1"></div>
+					<div class="loading3 loading3_2"></div>
+					<div class="loading3 loading3_3"></div>
+				</div>
+			</div>
+			<!--轮播图-->
+			<div class="swiper-container">
+			  <div class="swiper-wrapper">
+				<div class="swiper-slide" v-for="(vo,index) in bannerArr" v-cloak>
+					<img :src="vo.images" @click="clickBanner(index)"/>
+				</div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+			</div>
+			<!--主体列表代码-->
+			<div class="s-item-list">
+				<!--标题-->
+				<div class="s-header-text">
+					新品上线
+				</div>
+				<!--商品列表-->
+				<div class="s-item-box">
+				
+					<div class="s-item-info" v-for="(vo,index) in goodsArr" @click="clickGoods(index)" v-cloak>
+						<img :src="vo.image" class="s-item-image" />
+						<div class="s-item-bottom">
+							<div class="s-item-text">{{vo.name}}</div>
+							<div class="s-item-money">
+								<div class="s-item-money-now">￥{{vo.market_price}}</div>
+								<div class="s-item-money-before">￥{{vo.shop_price}}</div>
+							</div>
+							<div class="s-item-money">
+								<div class="s-item-money-now">热销中</div>
+								<div class="s-item-money-volume">销量：{{vo.sales_sum}}</div>
+							</div>
+						</div>
+					</div>	
+					<div class="weui-loadmore" v-if="loading_box" v-cloak>
+						<i class="weui-loading"></i>
+						<span class="weui-loadmore__tips">{{loading_box_title}}</span>
+					</div>		
+				</div>
+			</div>
+			<!--底部-->
+			<div class="weui-tabbar s-fixed">
+				<div class="weui-tabbar__item" v-bind:class="{'weui-bar__item--on':present==1}">
+					<div class="weui-tabbar__icon">
+						<img v-if="present==1" src="images/toolbar/home@selected.png" v-cloak />
+						<img v-else src="images/toolbar/home.png" v-cloak />
+					</div>
+					<p class="weui-tabbar__label">首页</p>
+				</div>
+				<div class="weui-tabbar__item" v-bind:class="{'weui-bar__item--on':present==2}">
+					<div class="weui-tabbar__icon">
+						<img v-if="present==2" src="images/toolbar/category@selected.png" v-cloak />
+						<img v-else src="images/toolbar/category.png" v-cloak />
+					</div>
+					<p class="weui-tabbar__label">分类</p>
+				</div>
+				<div class="weui-tabbar__item" v-bind:class="{'weui-bar__item--on':present==3}">
+					<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+					<div class="weui-tabbar__icon">
+						<img v-if="present==3" src="images/toolbar/cart@selected.png" v-cloak />
+						<img v-else src="images/toolbar/cart.png" v-cloak />
+					</div>
+					<p class="weui-tabbar__label">购物车</p>
+				</div>
+				<div class="weui-tabbar__item" v-bind:class="{'weui-bar__item--on':present==4}">
+					<div class="weui-tabbar__icon">
+						<img v-if="present==4" src="images/toolbar/my@selected.png" v-cloak />
+						<img v-else src="images/toolbar/my.png" v-cloak />
+					</div>
+					<p class="weui-tabbar__label">我的</p>
+				</div>
+			</div>
+		</div>
+	</body>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/jquery-weui.js"></script>
+<!--轮播图js-->
+<script src="js/swiper.js"></script>
+<!--vuejs-->
+<script src="js/vue2.5.js"></script>
+<!--公共的js-->
+<script src="js/base.js"></script>
+<script>
+	//初始化vue
+	var vm = new Vue({
+		el:'#app',
+		data:{
+			present:1,//当前页面
+			bannerArr:[],//banner图数组
+			goodsArr:[],//商品列表数据
+			type:0,//商品类型 0表示所有类型
+			page:1, //当前页数，默认为第一页
+			loading_box_title:'',//上啦加载更多时提示语
+			loading_box:false,//上啦加载更多时的动画是否显示
+			loadingHidden:true,//页面初始化动画是否显示
+		},
+		methods:{
+			init:function(){
+				var params = {
+					url: 'banner'
+				};
+				request(params,(res)=>{
+					if(res.error_code == 8888){
+						vm.bannerArr = res.msg;
+						swiperPic();
+					};
+				});
+				vm.page = 1;
+				var params1 ={
+					url:'getGoods/' + vm.type + '/' + vm.page
+				};
+				request(params1,(res)=>{
+					if(res.error_code == 8888){
+						vm.goodsArr = res.msg.data;
+						setTimeout(function() {
+							vm.loadingHidden = false;
+						}, 500);		
+					};
+				});
+				
+			},
+			clickBanner:function(index){
+				location.href = 'product.html?id='+vm.bannerArr[index].id;
+			},
+			clickGoods:function(index){
+				setCookie('user','12345','14');//保存14天
+				removeCookie('user');
+				getCookie('user')
+	
+	//location.href = 'product.html?id='+vm.goodsArr[index].id;
+			},
+			//上啦加载更多时执行的方法
+			onReachBottom:function(){
+				vm.loading_box = true;
+				vm.loading_box_title = '数据加载中...';
+				vm.page += 1;
+				var params1 ={
+					url:'getGoods/' + vm.type + '/' + vm.page
+				};
+				request(params1,(res)=>{
+					if(res.error_code == 8888){
+						if (res.msg.data.length) {
+							for (var i = 0; i < res.msg.data.length; i++) {
+								vm.goodsArr.push(res.msg.data[i]);
+							}
+							vm.loading_box = false;
+							vm.loading_box_title = '';
+						}else{
+							vm.loading_box_title = '没有数据了...';
+						}	
+					};
+				});
+			}
+		}
+				
+	});
+	//页面初始化执行
+	vm.init();
+	//滚动事件触发
+    window.onscroll = function() {
+        if(getScrollTop() + getClientHeight() == getScrollHeight()) {
+			vm.onReachBottom(); 
+		}
+    }
+</script>
+</html>

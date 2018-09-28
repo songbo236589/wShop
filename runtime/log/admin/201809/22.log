@@ -1,0 +1,882 @@
+---------------------------------------------------------------
+[ 2018-09-22T00:02:21+08:00 ] 172.17.0.24 115.144.122.194 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017717s][吞吐率：56.44req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000114s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T00:02:21+08:00 ] 172.17.0.24 115.144.122.194 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016788s][吞吐率：59.57req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000114s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=rtdn6dmu34th5medm2g5pi181n',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T03:38:10+08:00 ] 172.17.0.24 183.60.210.62 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017966s][吞吐率：55.66req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000112s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T03:38:10+08:00 ] 172.17.0.24 183.60.210.62 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016759s][吞吐率：59.67req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000126s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=noit8ff8j9hr0rtr2u91gk8q57',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T05:30:08+08:00 ] 172.17.0.24 140.205.205.25 HEAD /
+[ info ] mp.zihai029.com:443/ [运行时间：0.017700s][吞吐率：56.50req/s] [内存消耗：1,942.90kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000127s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'mp.zihai029.com:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T07:11:15+08:00 ] 172.17.0.24 183.60.210.52 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017874s][吞吐率：55.95req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000117s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T07:11:15+08:00 ] 172.17.0.24 183.60.210.52 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017972s][吞吐率：55.64req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T07:11:15+08:00 ] 172.17.0.24 183.60.210.52 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016992s][吞吐率：58.85req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000110s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uif64tbneqsieln90vmapiakl6',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T07:11:15+08:00 ] 172.17.0.24 183.60.210.52 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016975s][吞吐率：58.91req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000119s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tob4g236lgurkon5hcqg1begkg',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T10:49:02+08:00 ] 172.17.0.24 183.60.210.52 GET /
+[ info ] 39.107.111.90/ [运行时间：0.018280s][吞吐率：54.70req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000121s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T10:49:02+08:00 ] 172.17.0.24 183.60.210.52 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.017358s][吞吐率：57.61req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000123s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ptretd5ccu0st78nnrb07r8v5u',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T13:29:12+08:00 ] 172.17.0.24 107.170.204.65 GET /
+[ info ] 39.107.111.90/ [运行时间：0.024322s][吞吐率：41.11req/s] [内存消耗：1,943.80kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000126s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T14:21:11+08:00 ] 172.17.0.24 183.60.210.52 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017900s][吞吐率：55.87req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000117s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T14:21:11+08:00 ] 172.17.0.24 183.60.210.52 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016925s][吞吐率：59.08req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000127s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=2hk6re3hprg9k2ptdpgla5b5vd',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T16:21:11+08:00 ] 172.17.0.24 183.60.210.52 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017742s][吞吐率：56.36req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000128s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T16:21:11+08:00 ] 172.17.0.24 183.60.210.52 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016924s][吞吐率：59.09req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=um1qc8qsvburl0ife7iuirof47',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T16:21:12+08:00 ] 172.17.0.24 222.186.190.20 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017745s][吞吐率：56.35req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T16:21:12+08:00 ] 172.17.0.24 222.186.190.20 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.017300s][吞吐率：57.80req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000114s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ldu1v0h5asr7c72qvjcacdvmvh',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T20:05:15+08:00 ] 172.17.0.24 183.60.210.52 GET /
+[ info ] 39.107.111.90/ [运行时间：0.020316s][吞吐率：49.22req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000118s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T20:05:15+08:00 ] 172.17.0.24 183.60.210.52 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.019262s][吞吐率：51.92req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000118s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=dfchsrh85ud5ctq6m7kr1h6cmh',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T22:10:39+08:00 ] 172.17.0.24 216.218.206.66 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017966s][吞吐率：55.66req/s] [内存消耗：1,943.34kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T23:39:50+08:00 ] 172.17.0.24 60.191.38.77 GET /
+[ info ] 39.107.111.90:443/ [运行时间：0.017944s][吞吐率：55.73req/s] [内存消耗：1,943.90kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '39.107.111.90:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T23:39:52+08:00 ] 172.17.0.24 60.191.38.77 GET /admin/login/index.html
+[ info ] 39.107.111.90:443/admin/login/index.html [运行时间：0.017066s][吞吐率：58.60req/s] [内存消耗：1,872.46kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000113s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '39.107.111.90:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T23:50:34+08:00 ] 172.17.0.24 222.186.31.27 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017697s][吞吐率：56.51req/s] [内存消耗：1,944.02kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000128s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-22T23:50:35+08:00 ] 172.17.0.24 222.186.31.27 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016915s][吞吐率：59.12req/s] [内存消耗：1,874.57kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=obvq6onavbvo97vc51ql7u7vh4',
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File

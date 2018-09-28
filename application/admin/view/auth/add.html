@@ -1,0 +1,175 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>添加管理员</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">所属组</label>
+            <div class="layui-input-4">
+                <select name="group_id" lay-verify="required">
+                    <option value="">请选择所属组</option>
+					{volist name="auth_group" id="auth_group"}
+						<option value="{$auth_group['id']}">{$auth_group['title']}</option>	
+					{/volist}
+                </select>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="20" lay-verify="required" name="username" placeholder="请输入账号" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-4">
+                <input type="password" maxlength="20" lay-verify="required" name="pwd" placeholder="请输入密码"    class="layui-input">
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">真实姓名</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="20" lay-verify="required" name="name" placeholder="请输入真实姓名" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">邮箱</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="50" lay-verify="required" name="email" placeholder="请输入邮箱" class="layui-input"/>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">选择省/市/区</label>
+            <div class="layui-input-inline">
+                <select name="province_id" lay-verify="required" lay-filter="province" id="province">
+                    <option value="">请选择省</option>
+					{volist name="province" id="province"}
+						<option value="{$province.id}">{$province.name}</option>
+					{/volist}
+                </select>
+            </div>
+            <div class="layui-input-inline" >
+                <select name="city_id" lay-verify="required" id="city" lay-filter="city">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+			<div class="layui-input-inline" >
+                <select name="county_id" lay-verify="required" id="county" lay-filter="county">
+                    <option value="">请选择区/县</option>
+                </select>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">详细地址</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="50" id="address" lay-verify="required" name="address" placeholder="请输入详细地址" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" id="submit" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                <a href="{:url('index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script> 
+        layui.use(['form', 'layer'], function () {
+            var form = layui.form, layer = layui.layer,$= layui.jquery;
+			form.render();
+			//选择省
+        form.on('select(province)', function(data){
+			var pid = data.value;
+			
+			if(pid){
+				var province = $("#province").find("option:selected").text();
+				$('#address').val(province);
+			}else{
+				$('#address').val('');
+			}	
+			var loading = layer.load(1, {shade: [0.1, '#fff']});
+			$.get("{:url('getRegion')}?pid=" + pid, function (data) {
+				layer.close(loading);
+				var html='<option value="">请选择市</option>';
+				$.each(data, function (i, value) {
+					html += '<option value="number:'+value.id+'">'+value.name+'</option>';
+				});
+				$('#city').html(html);
+				var html1 = '<option value="">请选择区/县</option>';
+				$('#county').html(html1);
+				form.render()
+			});
+        });
+		//选择市
+		form.on('select(city)', function(data){
+			var pid = data.value;
+			pid = pid.substr(7);
+			if(pid){
+				var province = $("#province").find("option:selected").text();
+				var city = $("#city").find("option:selected").text()+'市';
+				var address = province + city;
+			}else{
+				var address = $("#province").find("option:selected").text();
+			}
+			$('#address').val(address);
+			var loading = layer.load(1, {shade: [0.1, '#fff']});
+			$.get("{:url('getRegion')}?pid=" + pid, function (data) {
+				layer.close(loading);
+				var html='<option value="">请选择区/县</option>';
+				$.each(data, function (i, value) {
+					html += '<option value="number:'+value.id+'">'+value.name+'</option>';
+				});
+				$('#county').html(html);
+				form.render()
+			});
+        });
+		//选择区县
+		form.on('select(county)', function(data){
+			var pid = data.value;
+			pid = pid.substr(7);
+			var province = $("#province").find("option:selected").text();
+			var city = $("#city").find("option:selected").text()+'市';
+			if(pid){
+				var county = $("#county").find("option:selected").text();
+				var address = province + city + county;
+			}else{
+				var address = province + city;
+			}
+			$('#address').val(address);
+        });
+            form.on('submit(submit)', function (data) {
+				$("#submit").attr({ disabled: "disabled" });
+                loading =layer.load(1, {shade: [0.1,'#fff']});
+				
+				if(data.field.county_id.length>7){
+					data.field.county_id = data.field.county_id.substr(7);
+				}
+				if(data.field.city_id.length>7){
+					data.field.city_id = data.field.city_id.substr(7);
+				}	
+                $.post("", data.field, function (res) {
+                    layer.close(loading);
+                    
+					if (res.errorCode == 8888) {
+                        layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+                            location.href = res.url;
+                        });
+                    } else {
+						$("#submit").removeAttr("disabled");
+                        layer.msg(res.msg, {time: 1800, icon: 2});
+                    }
+                });
+            })
+        });
+    
+</script>
+
+
+
+
+
+
+
+

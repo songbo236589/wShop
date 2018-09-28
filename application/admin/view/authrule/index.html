@@ -1,0 +1,136 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>权限{:lang('list')}</legend>
+    </fieldset>
+    <blockquote class="layui-elem-quote">
+        <a href="{:url('add')}" class="layui-btn layui-btn-small">添加权限</a>
+    </blockquote>
+    <table class="layui-table" id="list" lay-filter="list"></table>
+</div>
+<!--判断是否验证权限-->
+<script type="text/html" id="auth">
+	<input type="checkbox" name="authopen" value="{{d.id}}" lay-skin="switch" lay-text="{:lang('yes')}|{:lang('no')}" lay-filter="authopen" {{ d.authopen == 1 ? 'checked' : '' }}>
+</script>
+<!--是否在左边菜单栏显示-->
+<script type="text/html" id="status">
+	<input type="checkbox" name="menustatus" value="{{d.id}}" lay-skin="switch" lay-text="显示|隐藏" lay-filter="menustatus" {{ d.menustatus == 1 ? 'checked' : '' }}>
+</script>
+<!--排序-->
+<script type="text/html" id="order">
+    <input name="{{d.id}}" maxlength="11" data-id="{{d.id}}" class="list_order layui-input" value="{{d.sort}}" size="10"/>
+</script>
+<!-- 编辑和删除操作 -->
+<script type="text/html" id="action">
+    <a href="{:url('edit')}?id={{d.id}}" class="layui-btn layui-btn-xs">{:lang('edit')}</a>
+	<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">{:lang('del')}</a>
+</script>
+<script type="text/html" id="icon">
+    <span class="icon {{d.icon}}"></span>
+</script>
+{include file="common/foot"/}
+<script>
+    layui.use(['table','form'], function() {
+        var table = layui.table,form = layui.form,$ = layui.jquery;
+        var tableIn = table.render({
+            elem: '#list',
+            url: '{:url("index")}',
+            method: 'post',
+            cols: [[
+                {field: 'id', title: '{:lang("id")}', width: 70, fixed: true},
+                {field: 'icon', align: 'center',title: '图标', width: 100,templet: '#icon'},
+				
+                {field: 'ltitle', title: '权限名称', width: 200},
+                {field: 'href', title: '控制器/方法', width: 200},
+                {field: 'authopen',align: 'center', title: '是/否验证权限', width: 150,toolbar: '#auth'},
+                {field: 'menustatus',align: 'center',title: '菜单状态', width: 150,toolbar: '#status'},
+                {field: 'sort',align: 'center', title: '{:lang("order")}', width: 80, templet: '#order'},
+                {width: 160,align: 'center', title: '{:lang("action")}',toolbar: '#action'}
+            ]]
+        });
+		form.on('switch(authopen)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var authopen = obj.elem.checked===true?1:0;
+            $.post('{:url("ruleTz")}',{'id':id,'authopen':authopen},function (res) {
+                layer.close(loading);
+                if (res.errorCode == 8888) {
+						layer.msg(res.msg,{time:1000,icon:1});
+						//tableIn.reload();
+                    }else{
+                        layer.msg(res.msg,{time:1000,icon:2},function(){
+							location.href = res.url;
+							});
+                        return false;
+                    }
+
+            })
+        });	
+		
+		form.on('switch(menustatus)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var menustatus = obj.elem.checked===true?1:0;
+            $.post('{:url("ruleState")}',{'id':id,'menustatus':menustatus},function (res) {
+                layer.close(loading);
+                if (res.errorCode==8888) {
+						layer.msg(res.msg,{time:1000,icon:1});
+						//tableIn.reload();
+                    }else{
+                        layer.msg(res.msg,{time:1000,icon:2},function(){
+							location.href = res.url;
+							});
+                        return false;
+                    }
+
+            })
+        });	
+        table.on('tool(list)', function(obj){
+            var data = obj.data;
+			//是否需要验证
+            if(obj.event === 'del'){
+				//判断是否要删除   并创建回调函数
+                layer.confirm('您确定要删除该项权限吗，请注意同时会删除它的子级权限！', function(index){
+                    //开启转圈
+					var loading = layer.load(1, {shade: [0.1, '#fff']});
+					//使用post方式进行提交
+                    $.post("{:url('ruleDel')}",{id:data.id},function(res){
+                        //停止转圈
+						layer.close(loading);
+                        if(res.errorCode==8888){
+                            layer.msg(res.msg,{time:1000,icon:1},function(){
+							location.href = res.url;
+							});
+                            obj.del();
+                        }else{
+                            layer.msg(res.msg,{time:1000,icon:2},function(){
+							location.href = res.url;
+							});
+                        }
+                    });
+                    layer.close(index);
+                });
+            }
+        });
+        $('body').on('blur','.list_order',function() {
+			//失去焦点时获取class为list_order的值  并创建函数
+           var id = $(this).attr('data-id');
+           var sort = $(this).val();
+		   var loading = layer.load(1, {shade: [0.1, '#fff']});
+           //传入数据
+		   $.post('{:url("ruleOrder")}',{'id':id,'sort':sort},function(res){
+                layer.close(loading);
+				//获取返回值
+				if(res.errorCode==8888){
+                    layer.msg(res.msg,{time:1000,icon:1},function(){
+                        location.href = res.url;
+                    });
+                }else{
+                    layer.msg(res.msg,{time:1000,icon:2},function(){
+						location.href = res.url;
+					});
+                }
+           })
+        })
+    })
+</script>

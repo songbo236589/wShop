@@ -1,0 +1,65 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>修改密码</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-4">
+
+                <input type="text" disabled value="{$session['username']}" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-4">
+                <input type="password" name="pwd"
+				maxlength="20"
+				placeholder="请输入密码"
+				class="layui-input" lay-verify="password"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" id="submit" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+               <a href="{:url('index/main')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script>
+    layui.use(['form', 'layer','upload'], function () {
+        var form = layui.form, $ = layui.jquery, upload = layui.upload;
+
+        //表单验证
+        form.verify({
+            password: function(value){
+                if(value == ''){
+                    return '密码不能为空！';
+                }
+            }
+        });
+        form.on('submit(submit)', function (data) {
+			$("#submit").attr({ disabled: "disabled" });
+            // 提交到方法 默认为本身
+            data.field.id = "{$session['id']}";
+            var loading = layer.load(1, {shade: [0.1, '#fff']});
+            $.post("", data.field, function (res) {
+                layer.close(loading);
+                if (res.errorCode == 8888) {
+					layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+					   location.href = res.url;
+					});
+				}else {
+					$("#submit").removeAttr("disabled");
+					layer.msg(res.msg, {time: 1800, icon: 2});
+				}
+            });
+        });
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+---------------------------------------------------------------
+[ 2018-09-13T09:31:33+08:00 ] 172.17.0.24 123.139.16.9 GET /captcha.html
+[ info ] mp.zihai029.com/captcha.html [运行时间：0.015905s][吞吐率：62.87req/s] [内存消耗：1,634.32kb] [文件加载：43]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7hotsd1oklpt00gvie8i3pn3ad',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/admin/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/mp.zihai029.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T09:31:33+08:00 ] 172.17.0.24 123.139.16.9 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014733s][吞吐率：67.87req/s] [内存消耗：1,631.89kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7hotsd1oklpt00gvie8i3pn3ad',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/admin/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T09:31:33+08:00 ] 172.17.0.24 123.139.16.9 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014799s][吞吐率：67.57req/s] [内存消耗：1,631.67kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7hotsd1oklpt00gvie8i3pn3ad',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/admin/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T10:24:39+08:00 ] 172.17.0.24 123.139.16.9 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014571s][吞吐率：68.63req/s] [内存消耗：1,641.03kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7hotsd1oklpt00gvie8i3pn3ad',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://mp.zihai029.com/admin/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T10:24:39+08:00 ] 172.17.0.24 123.139.16.9 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014291s][吞吐率：69.97req/s] [内存消耗：1,641.06kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7hotsd1oklpt00gvie8i3pn3ad',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://mp.zihai029.com/admin/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T12:22:38+08:00 ] 172.17.0.24 110.193.246.113 GET /otn/login/init
+[ info ] kyfw.12306.cn/otn/login/init [运行时间：0.014574s][吞吐率：68.62req/s] [内存消耗：1,645.80kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'otn',
+    1 => 'login',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'https://kyfw.12306.cn/otn/leftTicket/init',
+  'if-modified-since' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'en,zh-CN;q=0.8,zh;q=0.6,zh-TW;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+  'host' => 'kyfw.12306.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T12:22:38+08:00 ] 172.17.0.24 110.193.246.113 GET /otn/login/init
+[ info ] kyfw.12306.cn/otn/login/init [运行时间：0.015473s][吞吐率：64.63req/s] [内存消耗：1,645.74kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'https://kyfw.12306.cn/otn/leftTicket/init',
+  'if-modified-since' => '0',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'en,zh-CN;q=0.8,zh;q=0.6,zh-TW;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+  'host' => 'kyfw.12306.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T21:29:37+08:00 ] 172.17.0.24 221.203.150.249 GET /otn/login/checkUser
+[ info ] kyfw.12306.cn/otn/login/checkUser [运行时间：0.015030s][吞吐率：66.53req/s] [内存消耗：1,643.21kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'otn',
+    1 => 'login',
+    2 => 'checkUser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'host' => 'kyfw.12306.cn',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-13T21:29:37+08:00 ] 172.17.0.24 221.203.150.249 GET /otn/login/checkUser
+[ info ] kyfw.12306.cn/otn/login/checkUser [运行时间：0.014883s][吞吐率：67.19req/s] [内存消耗：1,643.13kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'host' => 'kyfw.12306.cn',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

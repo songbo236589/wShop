@@ -1,0 +1,101 @@
+---------------------------------------------------------------
+[ 2018-09-26T14:55:48+08:00 ] 172.17.0.24 123.139.23.167 GET /captcha.html
+[ info ] mp.zihai029.com/captcha.html [运行时间：0.016505s][吞吐率：60.59req/s] [内存消耗：1,678.52kb] [文件加载：45]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000118s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=qlhi1egovqro3vt4ibabmv3gfk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/admin/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/mp.zihai029.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-26T14:55:48+08:00 ] 172.17.0.24 123.139.23.167 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.016275s][吞吐率：61.44req/s] [内存消耗：1,675.28kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000124s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=qlhi1egovqro3vt4ibabmv3gfk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/admin/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-26T14:55:48+08:00 ] 172.17.0.24 123.139.23.167 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014785s][吞吐率：67.64req/s] [内存消耗：1,675.31kb] [文件加载：46]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000115s ]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=qlhi1egovqro3vt4ibabmv3gfk',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/admin/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

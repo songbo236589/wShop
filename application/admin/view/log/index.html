@@ -1,0 +1,123 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>日志{:lang('list')}</legend>
+    </fieldset>
+    <div class="demoTable layui-row">
+        <div class="layui-form layui-form-pane" style="float:left;">
+			<div class="layui-form-item">
+				<label class="layui-form-label">快捷查询</label>
+				<div class="layui-input-inline layui-form">
+					<input class="layui-input" name="key" id="key" placeholder="请输入操作名/管理员账号">
+				</div>
+			</div>
+        </div>
+		<div class="layui-form layui-form-pane" style="float:left;width:460px">
+			<div class="layui-form-item">
+				<label class="layui-form-label">操作时间</label>
+				<div style="width:72%" class="layui-input-inline layui-form">
+					<input style="width:100%" type="text" class="layui-input" id="test10" placeholder="请选择时间">
+				</div>
+			</div>	
+		</div>
+    </div>
+	<div class="demoTable layui-row">
+		<button class="layui-btn" style="margin-left:30px;margin-top:15px;" id="search" data-type="reload">{:lang('search')}</button>
+		<a href="{:url('index')}" style="margin-top:15px;" class="layui-btn">{:lang('reset')}</a>
+		<button type="button" style="margin-top:15px;" class="layui-btn layui-btn-danger" id="delAll">{:lang('batch_remove')}</button>
+	</div>
+    <table class="layui-table" id="list" lay-filter="list"></table>
+</div>
+{include file="common/foot"/}
+<script type="text/html" id="action">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">{:lang('del')}</a>
+</script>
+<script>
+
+	layui.use('laydate', function(){
+		var laydate = layui.laydate;
+						
+		//日期时间范围
+		laydate.render({
+			elem: '#test10'
+			,type: 'datetime'
+			,range: true
+		});
+	})
+     layui.use(['table','form'], function() {
+        var table = layui.table,form = layui.form,$ = layui.jquery;
+        var tableIn = table.render({
+            id: 'ad',
+            elem: '#list',
+            url: '{:url("index")}',
+            method: 'post',
+            page:true,
+            cols: [[
+                {checkbox: true, fixed: true},
+                {field: 'id',align: 'center', title: '{:lang("id")}', width: 80, fixed: true, sort: true},
+				{field: 'username', align: 'center',title: '管理员账号', width: 200},
+				{field: 'title', align: 'center',title: '操作名', width: 200},
+				{field: 'ip', align: 'center',title: '操作人IP地址', width: 300},
+                {field: 'add_time',align: 'center', title: '操作时间',width: 200, sort: true},
+                {width: 160, align: 'center',title: '{:lang("action")}', toolbar: '#action'}
+            ]],
+            limit:''
+        });
+        //搜索
+        $('#search').on('click', function () {
+			
+			var time 	= $('#test10').val();
+			var key  = $('#key').val();
+			//alert(addtime);
+            if ($.trim(time) === '' && $.trim(key) === ''){
+                layer.msg('{:lang("query_condition")}', {icon: 0});
+                return;
+            }
+				tableIn.reload({
+					where: {time:time,key:key}
+				});
+            
+        });
+        table.on('tool(list)', function(obj) {
+            var data = obj.data;
+            if(obj.event === 'del'){
+				//单个删除
+                layer.confirm('确定要删除该日志吗？', function(index){
+                    var loading = layer.load(1, {shade: [0.1, '#fff']});
+                    $.post("{:url('del')}",{id:data.id},function(res){
+                        layer.close(loading);
+                        if(res.errorCode == 8888){
+                            layer.msg(res.msg,{time:1000,icon:1});
+                            tableIn.reload();
+                        }else{
+                            layer.msg(res.msg,{time:1000,icon:2});
+                        }
+                    });
+                    layer.close(index);
+                });
+            }
+        });
+        $('#delAll').click(function(){
+			//批量删除
+            layer.confirm('确定要删除所选中的全部日志吗？', {icon: 3}, function(index) {
+                layer.close(index);
+                var checkStatus = table.checkStatus('ad'); //test即为参数id设定的值
+                var ids = [];
+                $(checkStatus.data).each(function (i, o) {
+                    ids.push(o.id);
+                });
+                var loading = layer.load(1, {shade: [0.1, '#fff']});
+                $.post("{:url('delall')}", {'ids': ids}, function (data) {
+                    layer.close(loading);
+					//console.log(data);
+                    if (data.errorCode == 8888) {
+                        layer.msg(data.msg, {time: 1000, icon: 1});
+                        tableIn.reload();
+                    } else {
+                        layer.msg(data.msg, {time: 1000, icon: 2});
+                    }
+                });
+            });
+        })
+    })
+</script>

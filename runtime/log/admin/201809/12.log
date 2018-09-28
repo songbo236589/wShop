@@ -1,0 +1,188 @@
+---------------------------------------------------------------
+[ 2018-09-12T00:43:11+08:00 ] 172.17.0.24 187.207.116.97 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017125s][吞吐率：58.39req/s] [内存消耗：1,898.74kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'user-agent' => 'curl/7.43.0',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T00:43:11+08:00 ] 172.17.0.24 187.207.116.97 GET /admin/login/index.html
+[ info ] 39.107.111.90/admin/login/index.html [运行时间：0.016216s][吞吐率：61.67req/s] [内存消耗：1,826.92kb] [文件加载：51]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'user-agent' => 'curl/7.43.0',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /www/wwwroot/mp.zihai029.com/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T03:27:14+08:00 ] 172.17.0.24 140.205.205.25 HEAD /
+[ info ] mp.zihai029.com:443/ [运行时间：0.017309s][吞吐率：57.77req/s] [内存消耗：1,898.17kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'mp.zihai029.com:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T07:47:29+08:00 ] 172.17.0.24 106.75.92.187 GET /
+[ info ] 39.107.111.90:443/ [运行时间：0.018484s][吞吐率：54.10req/s] [内存消耗：1,899.63kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/json, text/plain, */*',
+  'accept-charset' => 'GBK,utf-8;q=0.7,*;q=0.3',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'host' => '39.107.111.90:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T22:13:29+08:00 ] 172.17.0.24 139.162.116.133 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017510s][吞吐率：57.11req/s] [内存消耗：1,898.76kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-12T22:15:26+08:00 ] 172.17.0.24 184.105.139.69 GET /
+[ info ] 39.107.111.90/ [运行时间：0.017966s][吞吐率：55.66req/s] [内存消耗：1,898.37kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

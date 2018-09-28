@@ -1,0 +1,1474 @@
+---------------------------------------------------------------
+[ 2018-09-17T08:34:06+08:00 ] 172.17.0.24 5.189.226.102 GET /admin/assets/js/views/login.js
+[ info ] 39.107.111.90/admin/assets/js/views/login.js [运行时间：0.014565s][吞吐率：68.66req/s] [内存消耗：1,642.93kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'python-requests/2.19.1',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T08:44:28+08:00 ] 172.17.0.24 5.189.226.102 GET /admin/assets/js/views/login.js
+[ info ] 39.107.111.90/admin/assets/js/views/login.js [运行时间：0.014352s][吞吐率：69.68req/s] [内存消耗：1,642.94kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'python-requests/2.19.1',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T08:48:35+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015198s][吞吐率：65.80req/s] [内存消耗：1,643.95kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T08:48:35+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015327s][吞吐率：65.24req/s] [内存消耗：1,643.98kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T09:53:41+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015212s][吞吐率：65.74req/s] [内存消耗：1,643.20kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T09:53:41+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014394s][吞吐率：69.47req/s] [内存消耗：1,643.23kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T09:53:46+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015192s][吞吐率：65.82req/s] [内存消耗：1,643.95kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T09:53:46+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015446s][吞吐率：64.74req/s] [内存消耗：1,643.98kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T09:56:17+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014516s][吞吐率：68.89req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T09:56:17+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014433s][吞吐率：69.28req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:01:10+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014804s][吞吐率：67.55req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:01:10+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.024883s][吞吐率：40.19req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:08:25+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014645s][吞吐率：68.28req/s] [内存消耗：1,644.95kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; STF-AL10 Build/HUAWEISTF-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.1321(0x26070014) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:08:25+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014233s][吞吐率：70.26req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; STF-AL10 Build/HUAWEISTF-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.1321(0x26070014) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:16:21+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.018028s][吞吐率：55.47req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:16:21+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014362s][吞吐率：69.63req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:17:11+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015156s][吞吐率：65.98req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:17:11+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014464s][吞吐率：69.14req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:17:11+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.021225s][吞吐率：47.11req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:17:11+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014436s][吞吐率：69.27req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:17:19+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.016607s][吞吐率：60.22req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:17:19+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014358s][吞吐率：69.65req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:22:00+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015478s][吞吐率：64.61req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:22:00+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015820s][吞吐率：63.21req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:22:20+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.019402s][吞吐率：51.54req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:22:20+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014138s][吞吐率：70.73req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:22:44+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013817s][吞吐率：72.37req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:22:45+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013857s][吞吐率：72.17req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:23:37+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013675s][吞吐率：73.13req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:23:37+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013706s][吞吐率：72.96req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:23:42+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.019424s][吞吐率：51.48req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:23:42+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014707s][吞吐率：67.99req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:24:54+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013970s][吞吐率：71.58req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:24:54+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014758s][吞吐率：67.76req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:25:11+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014293s][吞吐率：69.96req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:25:11+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014280s][吞吐率：70.03req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:29:09+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014990s][吞吐率：66.71req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:29:09+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014361s][吞吐率：69.63req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:41:38+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014668s][吞吐率：68.18req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T10:41:38+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014500s][吞吐率：68.96req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T16:38:05+08:00 ] 172.17.0.24 5.189.226.102 GET /admin/assets/js/views/login.js
+[ info ] 39.107.111.90/admin/assets/js/views/login.js [运行时间：0.015834s][吞吐率：63.15req/s] [内存消耗：1,642.94kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'python-requests/2.19.1',
+  'host' => '39.107.111.90',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T17:13:34+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014586s][吞吐率：68.56req/s] [内存消耗：1,643.95kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T17:13:34+08:00 ] 172.17.0.24 123.139.26.62 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013657s][吞吐率：73.22req/s] [内存消耗：1,643.98kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T17:51:26+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013840s][吞吐率：72.25req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T17:51:26+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014020s][吞吐率：71.33req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:18:44+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013824s][吞吐率：72.34req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:18:44+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014517s][吞吐率：68.89req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:19:16+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014397s][吞吐率：69.46req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:19:16+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013856s][吞吐率：72.17req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:20:52+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.013914s][吞吐率：71.87req/s] [内存消耗：1,644.45kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:20:52+08:00 ] 172.17.0.24 123.139.27.193 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014625s][吞吐率：68.38req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/WIFI Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:45:36+08:00 ] 172.17.0.24 113.133.197.202 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015969s][吞吐率：62.62req/s] [内存消耗：1,644.95kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/NON_NETWORK Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-17T18:45:36+08:00 ] 172.17.0.24 113.133.197.202 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.016015s][吞吐率：62.44req/s] [内存消耗：1,644.48kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mp.zihai029.com/template/web/index.html?from=singlemessage',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; F100S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044207 Mobile Safari/537.36 MicroMessenger/6.7.2.1340(0x2607023A) NetType/NON_NETWORK Language/zh_CN',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,78 @@
+---------------------------------------------------------------
+[ 2018-09-28T17:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html
+[ info ] www.wshop.com/captcha.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,349.35kb] [文件加载：45]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\PHPTutorial\WWW\wshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T17:10:11+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html?id=0.2309798084564949
+[ info ] www.wshop.com/captcha.html?id=0.2309798084564949 [运行时间：0.022001s][吞吐率：45.45req/s] [内存消耗：1,349.61kb] [文件加载：45]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\PHPTutorial\WWW\wshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

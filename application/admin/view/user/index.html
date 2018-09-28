@@ -1,0 +1,94 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>用户{:lang('list')}</legend>
+    </fieldset>
+    <div class="demoTable layui-row">
+        <div class="layui-form layui-form-pane" style="float:left;">
+			<div class="layui-form-item">
+				<label class="layui-form-label">微信昵称</label>
+				<div class="layui-input-inline layui-form">
+					<input class="layui-input" name="key" id="key" placeholder="请输入微信昵称">
+				</div>
+			</div>
+        </div>
+		<div class="layui-form layui-form-pane" style="float:left;width:460px">
+			<div class="layui-form-item">
+				<label class="layui-form-label">注册时间</label>
+				<div style="width:72%" class="layui-input-inline layui-form">
+					<input style="width:100%" type="text" class="layui-input" id="test10" placeholder="请选择时间">
+				</div>
+			</div>	
+		</div>
+		<div class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">性别</label>
+				<div class="layui-input-inline layui-form">
+					<select id="statuslist">
+						<option value=""></option>
+						{volist name="statuslist" id="statuslist"}
+						<option value="{$key}">{$statuslist}</option>
+						{/volist}
+					</select>
+				</div>
+			</div>		
+		</div>
+    </div>
+	<div class="demoTable layui-row">
+		<button class="layui-btn" style="margin-left:30px;margin-top:15px;" id="search" data-type="reload">{:lang('search')}</button>
+		<a href="{:url('index')}" style="margin-top:15px;" class="layui-btn">{:lang('reset')}</a>
+	</div>
+    <table class="layui-table" id="list" lay-filter="list"></table>
+</div>
+{include file="common/foot"/}
+<script type="text/html" id="avatarUrl">
+	<img src="{{d.avatarUrl}}" style="width:40%;height:100%;"/>
+</script>
+<script>
+
+	layui.use('laydate', function(){
+		var laydate = layui.laydate;
+						
+		//日期时间范围
+		laydate.render({
+			elem: '#test10'
+			,type: 'datetime'
+			,range: true
+		});
+	})
+     layui.use(['table','form'], function() {
+        var table = layui.table,form = layui.form,$ = layui.jquery;
+        var tableIn = table.render({
+            id: 'ad',
+            elem: '#list',
+            url: '{:url("index")}',
+            method: 'post',
+            page:true,
+            cols: [[
+                {field: 'id',align: 'center', title: '{:lang("id")}', width: 80, fixed: true, sort: true},
+                {field: 'nickName', align: 'center',title: '微信昵称', width: 150},
+				{field: 'avatarUrl', align: 'center',title: '用户头像', width: 150,toolbar: '#avatarUrl'},
+                {field: 'gender', align: 'center',title: '性别', width: 150},
+                {field: 'city', align: 'center',title: '城市', width: 150},
+                {field: 'province', align: 'center',title: '省份', width: 150},
+                {field: 'country', align: 'center',title: '国家', width: 150},
+                {field: 'add_time',align: 'center', title: '注册时间',width: 200, sort: true}
+            ]],
+            limit:''
+        });
+        //搜索
+        $('#search').on('click', function () {
+			var add_time 	= $('#test10').val();
+			var gender  = $('#statuslist').val();
+			var nickName  = $('#key').val();
+			//alert(addtime);
+            if ($.trim(add_time) === '' && $.trim(gender) === '' && $.trim(nickName) === ''){
+                layer.msg('{:lang("query_condition")}', {icon: 0});
+                return;
+            }
+				tableIn.reload({
+					where: {add_time:add_time,gender:gender,nickName:nickName}
+				});
+        });
+    })
+</script>

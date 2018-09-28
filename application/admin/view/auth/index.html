@@ -1,0 +1,256 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>管理员{:lang('list')}</legend>
+    </fieldset>
+	<div class="demoTable layui-row">
+        <div class="layui-form layui-form-pane" style="float:left;">
+			<div class="layui-form-item">
+				<label class="layui-form-label">快捷查询</label>
+				<div class="layui-input-inline layui-form">
+					<input class="layui-input" name="key" id="key" placeholder="请输入用户名/姓名">
+				</div>
+			</div>
+        </div>
+		<div class="layui-form layui-form-pane" style="float:left;width:460px">
+			<div class="layui-form-item">
+				<label class="layui-form-label">{:lang('add_time')}</label>
+				<div style="width:72%" class="layui-input-inline layui-form">
+					<input style="width:100%" type="text" class="layui-input" id="test10" placeholder="请选择时间">
+				</div>
+			</div>	
+		</div>
+		<div class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">{:lang('status')}</label>
+				<div class="layui-input-inline layui-form">
+					<select id="statuslist">
+						<option value=""></option>
+						{volist name="statuslist" id="statuslist"}
+						<option value="{$key}">{$statuslist}</option>
+						{/volist}
+					</select>
+				</div>
+			</div>		
+		</div>
+		<form class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">选择省</label>
+				<div class="layui-input-inline layui-form">
+					<select lay-filter="province_id" id="province_id">
+						<option value="">请选择省</option>
+						{volist name="province" id="province"}
+							<option value="{$province.id}">{$province.name}</option>
+						{/volist}
+					</select>
+				</div>
+			</div>	
+		</form>
+		<form class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">选择市</label>
+				<div class="layui-input-inline layui-form">
+					<select lay-filter="city_id" id="city_id">
+						<option value="">请选择市</option>
+					</select>
+				</div>
+			</div>
+		</form>	
+		<form class="layui-form layui-form-pane" style="float:left">	
+			<div class="layui-form-item">
+				<label class="layui-form-label">选择区/县</label>
+				<div class="layui-input-inline layui-form">
+					<select lay-filter="county_id" id="county_id">
+						<option value="">请选择区/县</option>
+					</select>
+				</div>
+			</div>
+		</form>	
+    </div>
+	<div class="demoTable layui-row">
+		<button class="layui-btn" style="margin-left:30px;margin-top:15px;" id="search" data-type="reload">{:lang('search')}</button>
+		<a href="{:url('index')}" style="margin-top:15px;" class="layui-btn">{:lang('reset')}</a>
+		
+	</div>
+    <blockquote class="layui-elem-quote">
+        <a href="{:url('add')}" class="layui-btn layui-btn-small">添加管理员</a>
+    </blockquote>
+	<!-- 这个是列表  -->
+    <table class="layui-table" id="list" lay-filter="list"></table>
+</div>
+
+{include file="common/foot"/}
+<script type="text/html" id="barDemo">
+	<!--  编辑操作  -->
+    
+    <!-- 删除操作  超级管理员不可被删除 -->
+	{{# if(d.id==1){ }}
+	<a class="layui-btn layui-btn-xs layui-btn-disabled">{:lang('edit')}</a>
+    <a class="layui-btn layui-btn-xs layui-btn-disabled">{:lang('del')}</a>
+	<a class="layui-btn layui-btn-xs layui-btn-disabled">初始化密码</a>
+    {{# }else{  }}
+	<a href="{:url('edit')}?id={{d.id}}" class="layui-btn layui-btn-xs">{:lang('edit')}</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">{:lang('del')}</a>
+	<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="initialization">初始化密码</a>
+    {{# } }}
+</script>
+<script type="text/html" id="open">
+	{{# if(d.id==1){ }}
+        <input type="checkbox" disabled name="is_open" value="{{d.id}}" lay-skin="switch" lay-text="{:lang('enabled')}|{:lang('disabled')}" lay-filter="open" checked>
+    {{# }else{  }}
+        <input type="checkbox" name="is_open" value="{{d.id}}" lay-skin="switch" lay-text="{:lang('enabled')}|{:lang('disabled')}" lay-filter="open" {{ d.is_open == 1 ? 'checked' : '' }}>
+    {{# } }}
+</script>
+<script>
+	layui.use('laydate', function(){
+		var laydate = layui.laydate;
+						
+		//日期时间范围
+		laydate.render({
+			elem: '#test10'
+			,type: 'datetime'
+			,range: true
+		});
+	})
+	<!-- 表格js部分 -->
+    layui.use(['table','form'], function() {
+        var table = layui.table,form = layui.form,$ = layui.jquery;
+        var tableIn = table.render({
+			id: 'ad',
+            elem: '#list',
+            url: '{:url("index")}',
+            method:'post',   
+			page:true,	
+            cols: [[ 
+			
+				{field: 'id',align: 'center', title: '{:lang("id")}', width: 80, fixed: true, sort: true},
+                {field:'username',align:'center', title: '账号', width:80,fixed: true},
+				{field:'name',align:'center', title: '姓名', width:80,fixed: true}
+                ,{field:'title',align:'center', title: '用户组', width:100}
+				,{field:'is_open',align:'center', title: '{:lang("status")}',width:150,toolbar: '#open'}
+				,{field:'email',align:'center', title: '邮箱',width:150}
+				,{field:'province',align:'center', title: '省',width:100}
+				,{field:'city',align:'center', title: '市',width:100}
+				,{field:'county',align:'center', title: '区',width:100}
+				,{field:'address',align:'center', title: '详细地址',width:200}
+                ,{field:'ip',align:'center', title: '创建人IP',width:150}
+                ,{field:'login_ip',align:'center', title: '最后登录IP',width:150}
+				,{field:'add_time',align:'center', title: '创建时间',width:200, sort: true}
+				,{field:'edit_time',align:'center', title: '修改时间',width:200, sort: true}
+                
+                ,{width:160, align:'center',  title: '{:lang("action")}',width:200,toolbar: '#barDemo'}
+            ]],
+            limit:''
+        });
+		form.on('select(province_id)', function(data){
+			var pid = data.value;
+			var loading = layer.load(1, {shade: [0.1, '#fff']});
+			$.get("{:url('getRegion')}?pid=" + pid, function (data) {
+				layer.close(loading);
+				var html='<option value="">请选择市</option>';
+				$.each(data, function (i, value) {
+					html += '<option value="number:'+value.id+'">'+value.name+'</option>';
+				});
+				$('#city_id').html(html);
+				var html1 = '<option value="">请选择区/县</option>';
+				$('#county_id').html(html1);
+				form.render()
+			});
+        });
+		//选择市
+		form.on('select(city_id)', function(data){
+			var pid = data.value;
+			pid = pid.substr(7);
+			var loading = layer.load(1, {shade: [0.1, '#fff']});
+			$.get("{:url('getRegion')}?pid=" + pid, function (data) {
+				layer.close(loading);
+				var html='<option value="">请选择区/县</option>';
+				$.each(data, function (i, value) {
+					html += '<option value="number:'+value.id+'">'+value.name+'</option>';
+				});
+				$('#county_id').html(html);
+				form.render()
+			});
+        });
+		//搜索
+        $('#search').on('click', function () {
+			var add_time 		= $('#test10').val();
+			var status  		= $('#statuslist').val();
+			var key  		    = $('#key').val();
+			var county_id  		= $('#county_id').val();
+			var city_id  		= $('#city_id').val();
+			var province_id  	= $('#province_id').val();
+			if(county_id.length>7){
+				county_id = county_id.substr(7);
+			}
+			if(city_id.length>7){
+				city_id = city_id.substr(7);
+			}
+			if(province_id.length>7){
+				province_id = province_id.substr(7);
+			}
+            if ($.trim(county_id) === '' && $.trim(city_id) === '' && $.trim(province_id) === '' && $.trim(key) === '' && $.trim(status) === '' && $.trim(add_time) === '' ){
+                layer.msg('{:lang("query_condition")}', {icon: 0});
+                return;
+            }
+				tableIn.reload({
+					where: {county_id:county_id,city_id:city_id,province_id:province_id,key:key,add_time:add_time,status:status}
+				});
+            
+        });
+		form.on('switch(open)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var is_open = obj.elem.checked===true?1:0;
+            $.post('{:url("adminState")}',{'id':id,'is_open':is_open},function (res) {
+
+                layer.close(loading);
+                if (res.errorCode == 8888) {
+						layer.msg(res.msg,{time:1000,icon:1});
+						//tableIn.reload();
+                    }else{
+                        layer.msg(res.msg,{time:1000,icon:2},function(){
+							location.href = res.url;
+							});
+                        return false;
+                    }
+
+            })
+        });
+		//点击table上的按钮
+        table.on('tool(list)', function(obj){
+            //获取当前点击行的数据
+			var data = obj.data;
+			if(obj.event === 'del'){
+                layer.confirm('确定要删除该管理员吗！', function(index){
+					var loading = layer.load(1, {shade: [0.1, '#fff']});
+                    $.post("{:url('del')}",{id:data.id},function(res){
+                       layer.close(loading);
+                        if(res.errorCode == 8888){
+							layer.msg(res.msg,{time:1000,icon:1});
+                            obj.del();
+                        }else{
+                            layer.msg(res.msg,{time:1000,icon:2});
+                        }
+                    });
+                    layer.close(index);
+                });
+            }else if(obj.event === 'initialization'){
+                layer.confirm('确定要初始化该管理员密码为123456吗？', function(index){
+                    $.post("{:url('passwordS')}",{id:data.id},function(res){
+						if(res.errorCode == 8888){
+                            layer.msg(res.msg,{time:1000,icon:1});
+                            obj.initialization();
+                        }else{
+                            layer.msg(res.msg,{time:1000,icon:2});
+                        }
+                    });
+                    layer.close(index);
+                });
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

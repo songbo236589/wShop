@@ -1,0 +1,237 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>商品{:lang('list')}</legend>
+    </fieldset>
+    <div class="demoTable layui-row">
+        <div class="layui-form layui-form-pane" style="float:left;">
+			<div class="layui-form-item">
+				<label class="layui-form-label">商品名称</label>
+				<div class="layui-input-inline layui-form">
+					<input class="layui-input" name="key" id="key" placeholder="请输入商品名称">
+				</div>
+			</div>
+        </div>
+		<div class="layui-form layui-form-pane" style="float:left;width:460px">
+			<div class="layui-form-item">
+				<label class="layui-form-label">{:lang('add_time')}</label>
+				<div style="width:72%" class="layui-input-inline layui-form">
+					<input style="width:100%" type="text" class="layui-input" id="test10" placeholder="请选择时间">
+				</div>
+			</div>	
+		</div>
+		<div class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">商品分类</label>
+				<div class="layui-input-inline layui-form">
+					<select id="goods_category_id">
+						<option value=""></option>
+						{volist name="goods_category" id="goods_category"}
+						<option value="{$goods_category['id']}">{$goods_category.name}</option>
+						{/volist}
+					</select>
+				</div>
+			</div>		
+		</div>
+		<div class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">推荐banner</label>
+				<div class="layui-input-inline layui-form">
+					<select id="openBannere">
+						<option value=""></option>
+						{volist name="openBannerData" id="openBannerData"}
+						<option value="{$key}">{$openBannerData}</option>
+						{/volist}
+					</select>
+				</div>
+			</div>		
+		</div>
+		<div class="layui-form layui-form-pane" style="float:left">
+			<div class="layui-form-item">
+				<label class="layui-form-label">{:lang('status')}</label>
+				<div class="layui-input-inline layui-form">
+					<select id="statuslist">
+						<option value=""></option>
+						{volist name="statuslist" id="statuslist"}
+						<option value="{$key}">{$statuslist}</option>
+						{/volist}
+					</select>
+				</div>
+			</div>		
+		</div>
+    </div>
+	<div class="demoTable layui-row">
+		<button class="layui-btn" style="margin-left:30px;margin-top:15px;" id="search" data-type="reload">{:lang('search')}</button>
+		<a href="{:url('index')}" style="margin-top:15px;" class="layui-btn">{:lang('reset')}</a>
+		<button type="button" style="margin-top:15px;" class="layui-btn layui-btn-danger" id="delAll">{:lang('batch_remove')}</button>
+	</div>
+	<blockquote class="layui-elem-quote">
+        <a href="{:url('add')}" class="layui-btn layui-btn-small">添加商品</a>
+    </blockquote>
+    <table class="layui-table" id="list" lay-filter="list"></table>
+</div>
+{include file="common/foot"/}
+<script type="text/html" id="status">
+	<input type="checkbox" name="status" value="{{d.id}}" lay-skin="switch" lay-text="上架|下架" lay-filter="status" {{ d.status == 1 ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="open_banner">
+	<input type="checkbox" name="open_banner" value="{{d.id}}" lay-skin="switch" lay-text="{:lang('yes')}|{:lang('no')}" lay-filter="open_banner" {{ d.open_banner == 1 ? 'checked' : '' }}>
+</script>
+
+<script type="text/html" id="order">
+    <input name="{{d.id}}" data-id="{{d.id}}" class="list_order layui-input" value="{{d.sort}}" maxlength="11" size="10"/>
+</script>
+<script type="text/html" id="action">
+    <a href="{:url('edit')}?id={{d.id}}" class="layui-btn layui-btn-xs">{:lang('edit')}</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">{:lang('del')}</a>
+</script>
+<script>
+
+	layui.use('laydate', function(){
+		var laydate = layui.laydate;
+						
+		//日期时间范围
+		laydate.render({
+			elem: '#test10'
+			,type: 'datetime'
+			,range: true
+		});
+	})
+     layui.use(['table','form'], function() {
+        var table = layui.table,form = layui.form,$ = layui.jquery;
+        var tableIn = table.render({
+            id: 'ad',
+            elem: '#list',
+            url: '{:url("index")}',
+            method: 'post',
+            page:true,
+            cols: [[
+                {checkbox: true, fixed: true},
+                {field: 'id',align: 'center', title: '{:lang("id")}', width: 80, fixed: true, sort: true},
+                {field: 'name', align: 'center',title: '商品名称', width: 150},
+                {field: 'store_count', align: 'center',title: '库存数量', width: 150, sort: true},
+                {field: 'sales_sum', align: 'center',title: '销量', width: 150, sort: true},
+                {field: 'shop_price', align: 'center',title: '本店售价', width: 150, sort: true},
+                {field: 'market_price', align: 'center',title: '市场价', width: 150, sort: true},
+                {field: 'cname', align: 'center',title: '商品分类', width: 150},
+                {field: 'add_time',align: 'center', title: '{:lang("add_time")}',width: 150, sort: true},
+                {field: 'edit_time',align: 'center', title: '{:lang("edit_time")}',width: 150, sort: true},
+				{field: 'status', align: 'center', title: '{:lang("status")}', width: 100, toolbar: '#status'},
+				{field: 'open_banner', align: 'center', title: '推荐banner', width: 150, toolbar: '#open_banner'},
+                {field: 'sort', align: 'center', title: '{:lang("order")}', width: 120, templet: '#order', sort: true},
+                {width: 160, align: 'center',title: '{:lang("action")}', toolbar: '#action'}
+            ]],
+            limit:''
+        });
+        //搜索
+        $('#search').on('click', function () {
+			var goods_category_id 	= $('#goods_category_id').val();
+			var time 	= $('#test10').val();
+			var status  = $('#statuslist').val();
+			var key  = $('#key').val();
+			var openBannere  = $('#openBannere').val();
+			//alert(addtime);
+            if ($.trim(openBannere) === '' && $.trim(key) === '' && $.trim(status) === '' && $.trim(goods_category_id) === '' && $.trim(time) === '' ){
+                layer.msg('{:lang("query_condition")}', {icon: 0});
+                return;
+            }
+				tableIn.reload({
+					where: {openBannere:openBannere,key:key,goods_category_id:goods_category_id,time:time,status:status}
+				});
+            
+        });
+		form.on('switch(open_banner)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var open_banner = obj.elem.checked===true?1:0;
+            $.post('{:url("openBanner")}',{'id':id,'open_banner':open_banner},function (res) {
+                layer.close(loading);
+                if (res.errorCode == 8888){
+						layer.msg(res.msg,{time:1000,icon:1});
+						//tableIn.reload();
+                    }else{
+                        layer.msg(res.msg,{time:1000,icon:2},function(){
+							location.href = res.url;
+							});
+                        return false;
+                    }
+
+            })
+        });	
+		form.on('switch(status)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var status = obj.elem.checked===true?1:0;
+            $.post('{:url("editState")}',{'id':id,'status':status},function (res) {
+                layer.close(loading);
+                if (res.errorCode == 8888){
+						layer.msg(res.msg,{time:1000,icon:1});
+						//tableIn.reload();
+                    }else{
+                        layer.msg(res.msg,{time:1000,icon:2},function(){
+							location.href = res.url;
+							});
+                        return false;
+                    }
+
+            })
+        });	
+        table.on('tool(list)', function(obj) {
+            var data = obj.data;
+            if(obj.event === 'del'){
+				//单个删除
+                layer.confirm('确定要删除该商品吗？', function(index){
+                    var loading = layer.load(1, {shade: [0.1, '#fff']});
+                    $.post("{:url('del')}",{id:data.id},function(res){
+                        layer.close(loading);
+                        if(res.errorCode == 8888){
+                            layer.msg(res.msg,{time:1000,icon:1});
+                            tableIn.reload();
+                        }else{
+                            layer.msg(res.msg,{time:1000,icon:2});
+                        }
+                    });
+                    layer.close(index);
+                });
+            }
+        });
+        $('body').on('blur','.list_order',function() {
+            var id = $(this).attr('data-id');
+            var sort = $(this).val();
+            var loading = layer.load(1, {shade: [0.1, '#fff']});
+            $.post('{:url("listOrder")}',{'id':id,'sort':sort},function(res){
+                layer.close(loading);
+                //获取返回值
+				if(res.errorCode==8888){
+                    layer.msg(res.msg,{time:1000,icon:1});
+                }else{
+                    layer.msg(res.msg,{time:1000,icon:2},function(){
+						location.href = res.url;
+					});
+                }
+            })
+        });
+        $('#delAll').click(function(){
+			//批量删除
+            layer.confirm('确定要删除选中的全部商品吗？', {icon: 3}, function(index) {
+                layer.close(index);
+                var checkStatus = table.checkStatus('ad'); //test即为参数id设定的值
+                var ids = [];
+                $(checkStatus.data).each(function (i, o) {
+                    ids.push(o.id);
+                });
+                var loading = layer.load(1, {shade: [0.1, '#fff']});
+                $.post("{:url('delall')}", {'ids': ids}, function (data) {
+                    layer.close(loading);
+					//console.log(data);
+                    if (data.errorCode == 8888) {
+                        layer.msg(data.msg, {time: 1000, icon: 1});
+                        tableIn.reload();
+                    } else {
+                        layer.msg(data.msg, {time: 1000, icon: 2});
+                    }
+                });
+            });
+        })
+    })
+</script>

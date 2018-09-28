@@ -1,0 +1,166 @@
+---------------------------------------------------------------
+[ 2018-09-16T09:45:49+08:00 ] 172.17.0.24 23.102.51.95 GET /manager/html
+[ info ] 39.107.111.90/manager/html [运行时间：0.014809s][吞吐率：67.53req/s] [内存消耗：1,643.25kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manager',
+    1 => 'html',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => '39.107.111.90',
+  'accept-language' => 'zh-cn,en-us;q=0.5',
+  'accept' => '*/*',
+  'user-agent' => 'User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-16T09:45:49+08:00 ] 172.17.0.24 23.102.51.95 GET /manager/html
+[ info ] 39.107.111.90/manager/html [运行时间：0.014662s][吞吐率：68.20req/s] [内存消耗：1,643.23kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => '39.107.111.90',
+  'accept-language' => 'zh-cn,en-us;q=0.5',
+  'accept' => '*/*',
+  'user-agent' => 'User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-16T09:45:50+08:00 ] 172.17.0.24 23.102.51.95 GET /manager/html
+[ info ] 39.107.111.90/manager/html [运行时间：0.015235s][吞吐率：65.64req/s] [内存消耗：1,642.91kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manager',
+    1 => 'html',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'accept-language' => 'zh-cn,en-us;q=0.5',
+  'accept' => '*/*',
+  'user-agent' => 'User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-16T09:45:50+08:00 ] 172.17.0.24 23.102.51.95 GET /manager/html
+[ info ] 39.107.111.90/manager/html [运行时间：0.014298s][吞吐率：69.94req/s] [内存消耗：1,642.88kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.107.111.90',
+  'accept-language' => 'zh-cn,en-us;q=0.5',
+  'accept' => '*/*',
+  'user-agent' => 'User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-16T20:11:36+08:00 ] 172.17.0.24 119.29.130.185 GET /otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicketA&requestData=%5B%7B%22train_date%22%3A%2220180926%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22PIJ%22%2C%22to_station%22%3A%22POJ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%22bcd18c711f7e2519c0a5ccb1771ae369%22%2C%22device_no%22%3A%228e6b3e56733b75cd%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180916201136%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537099896646&sign=
+[ info ] mobile.12306.cn/otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicketA&requestData=%5B%7B%22train_date%22%3A%2220180926%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22PIJ%22%2C%22to_station%22%3A%22POJ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%22bcd18c711f7e2519c0a5ccb1771ae369%22%2C%22device_no%22%3A%228e6b3e56733b75cd%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180916201136%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537099896646&sign= [运行时间：0.015396s][吞吐率：64.95req/s] [内存消耗：1,648.23kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'otsmobile',
+    1 => 'app',
+    2 => 'mgs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'workspaceid' => 'product',
+  'trackerid' => '',
+  'signtype' => '0',
+  'platform' => 'ANDROID',
+  'did' => '8e6b3e56733b75cd',
+  'appid' => '9101430221728',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'mobile.12306.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'operationType' => 'com.cars.otsmobile.queryLeftTicketA',
+  'requestData' => '[{"train_date":"20180926","purpose_codes":"00","from_station":"PIJ","to_station":"POJ","station_train_code":"","start_time_begin":"0000","start_time_end":"2400","train_headers":"QB#","train_flag":"","seat_type":"","seatBack_Type":"","ticket_num":"","dfpStr":"","baseDTO":{"check_code":"bcd18c711f7e2519c0a5ccb1771ae369","device_no":"8e6b3e56733b75cd","mobile_no":"","os_type":"a","time_str":"20180916201136","user_name":"","version_no":"4.0.0.07121250"}}]',
+  'ts' => '1537099896646',
+  'sign' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-16T20:11:36+08:00 ] 172.17.0.24 119.29.130.185 GET /otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicketA&requestData=%5B%7B%22train_date%22%3A%2220180926%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22PIJ%22%2C%22to_station%22%3A%22POJ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%22bcd18c711f7e2519c0a5ccb1771ae369%22%2C%22device_no%22%3A%228e6b3e56733b75cd%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180916201136%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537099896646&sign=
+[ info ] mobile.12306.cn/otsmobile/app/mgs/mgw.htm?operationType=com.cars.otsmobile.queryLeftTicketA&requestData=%5B%7B%22train_date%22%3A%2220180926%22%2C%22purpose_codes%22%3A%2200%22%2C%22from_station%22%3A%22PIJ%22%2C%22to_station%22%3A%22POJ%22%2C%22station_train_code%22%3A%22%22%2C%22start_time_begin%22%3A%220000%22%2C%22start_time_end%22%3A%222400%22%2C%22train_headers%22%3A%22QB%23%22%2C%22train_flag%22%3A%22%22%2C%22seat_type%22%3A%22%22%2C%22seatBack_Type%22%3A%22%22%2C%22ticket_num%22%3A%22%22%2C%22dfpStr%22%3A%22%22%2C%22baseDTO%22%3A%7B%22check_code%22%3A%22bcd18c711f7e2519c0a5ccb1771ae369%22%2C%22device_no%22%3A%228e6b3e56733b75cd%22%2C%22mobile_no%22%3A%22%22%2C%22os_type%22%3A%22a%22%2C%22time_str%22%3A%2220180916201136%22%2C%22user_name%22%3A%22%22%2C%22version_no%22%3A%224.0.0.07121250%22%7D%7D%5D&ts=1537099896646&sign= [运行时间：0.014507s][吞吐率：68.93req/s] [内存消耗：1,645.76kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/thinkphp/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/mp.zihai029.com/application/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'workspaceid' => 'product',
+  'trackerid' => '',
+  'signtype' => '0',
+  'platform' => 'ANDROID',
+  'did' => '8e6b3e56733b75cd',
+  'appid' => '9101430221728',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'mobile.12306.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

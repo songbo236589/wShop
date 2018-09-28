@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<!--aui基础样式-->
+    <link rel="stylesheet" type="text/css" href="css/aui.css" />
+	<!--轮播图-->
+	<link rel="stylesheet" type="text/css" href="css/aui-slide.css" />
+	<!--下拉刷新-->
+	<link rel="stylesheet" type="text/css" href="css/aui-pull-refresh.css" />
+	<!--自定义样式-->
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+<div id="app">
+	<!--头部-->
+    <header class="aui-bar aui-bar-nav">
+        <div class="aui-title">{{header}}</div>
+    </header>
+	<section class="aui-refresh-content" id="app">	
+		<!--banner-->
+		<div id="aui-slide">
+			<div class="aui-slide-wrap" >
+				<div v-for="(vo,index) in bannerArr" class="aui-slide-node bg-dark" v-cloak>
+					<img :src="vo.images" @click="clickBanner(index)"/>
+				</div>
+			</div>
+			<div class="aui-slide-page-wrap"><!--分页容器--></div>
+		</div>
+		<!--主体代码-->
+		<div class="aui-content aui-margin-b-15 s-margin-bottom">
+			<ul class="aui-list aui-media-list">
+				<li class="aui-list-item">
+					<div class="aui-list-item-inner" id="aui-list-item-inner">
+						<div class="s-header_text">新品上线</div>
+						<div class="aui-row aui-row-padded">
+						
+						
+						
+							<div class="aui-col-xs-6" v-for="(vo,index) in list" v-cloak>
+								<img :src="vo.image" class="s-height-140"/>
+								<div class="aui-list-item-title aui-font-size-28 s-webkit-line-clamp">{{vo.name}}</div>
+								<div class="s-item-padding">
+									<div class="aui-list-item-text">
+										<div class="aui-list-item-title aui-font-size-14 s-color">
+											￥{{vo.shop_price}}
+										</div>
+										<div class="aui-list-item-right aui-font-size-14 s-text-decoration">
+											￥{{vo.market_price}}
+										</div>
+									</div>
+									<div class="aui-list-item-text">
+										<div class="aui-list-item-title aui-font-size-14 s-color">
+											热销中
+										</div>
+										<div class="aui-list-item-right aui-font-size-14">
+											销量：{{vo.sales_sum}}
+										</div>
+									</div>
+								</div>
+							</div>
+						   
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!--上啦加载更多时触发的dome-->
+			<div class="loading_box1" v-if="loading_box" v-cloak>
+			  <div class="loading1"></div>
+			  <div class="loading1_list">{{loading_box_title}}</div>
+			</div>
+		</div>
+		
+	</section>
+</div>	
+	<!--底部-->
+	<footer class="aui-bar aui-bar-tab">
+        <div class="aui-bar-tab-item aui-active">
+            <i class="aui-iconfont aui-icon-paper"></i>
+            <div class="aui-bar-tab-label">首页</div>
+        </div>
+        <div class="aui-bar-tab-item">
+            <i class="aui-iconfont aui-icon-menu"></i>
+            <div class="aui-bar-tab-label">分类</div>
+        </div>
+        <div class="aui-bar-tab-item">
+            <i class="aui-iconfont aui-icon-cart"></i>
+            <div class="aui-bar-tab-label">购物车</div>
+        </div>
+        <div class="aui-bar-tab-item">
+            <i class="aui-iconfont aui-icon-my"></i>
+            <div class="aui-bar-tab-label">我的</div>
+        </div>
+    </footer>
+</body>
+<!--轮播图js-->
+<script type="text/javascript" src="js/aui-slide.js"></script>
+<!--下拉刷新js-->
+<script src="js/aui-pull-refresh.js"></script>
+<!--上啦事件监听js-->
+<script type="text/javascript" src="js/scroll.js" ></script>
+<!--vue2.5-->
+<script src="js/vue2.5.js"></script>
+<!--ajax异步加载-->
+<script src="js/vue-resource.min.js"></script>
+<!--公共的js-->
+<script src="js/base.js"></script>
+<script type="text/javascript">
+	var vm = new Vue({
+		el:'#app',
+		data:{
+			header:'wShop',//项目名称
+			bannerArr:[],//轮播图数据
+			list:[],      //商品列表数据
+			type:0,//商品类型 0表示所有类型
+			page:1, //当前页数，默认为第一页
+			loading_box_title:'',//上啦加载更多时提示语
+			loading_box:false,//上啦加载更多时的动画是否显示
+		},
+		methods:{
+			init:function(){
+				var params = {
+					url: 'banner'
+				};
+				request(params,(res)=>{
+					if(res.error_code == 8888){
+						vm.bannerArr = res.msg;
+					};
+					
+				});
+				vm.page = 1;
+				var params1 ={
+					url:'getGoods/' + vm.type + '/' + vm.page
+				};
+				request(params1,(res)=>{
+					if(res.error_code == 8888){
+						vm.loading_box = false;
+						vm.loading_box_title = '';
+						vm.list = res.msg.data;
+					};
+				});
+			},
+			//点击获取当前的索引
+			clickBanner:function(index){
+				console.log(index);
+				//vm.bannerArr.splice(index,1);//删除数组中的索引值
+			},
+			//上啦加载更多时执行的方法
+			onReachBottom:function(){
+				vm.loading_box = true;
+				vm.loading_box_title = '数据加载中...';
+				vm.page += 1;
+				var params1 ={
+					url:'getGoods/' + vm.type + '/' + vm.page
+				};
+				request(params1,(res)=>{
+					if(res.error_code == 8888){
+						if (res.msg.data.length) {
+							for (var i = 0; i < res.msg.data.length; i++) {
+								vm.list.push(res.msg.data[i]);
+							}
+							vm.loading_box = false;
+							vm.loading_box_title = '';
+						}else{
+							vm.loading_box_title = '没有数据了...';
+							//setTimeout(function(){
+							//	vm.loading_box = true;
+							//	vm.loading_box_title = '';
+							//},500);
+						}	
+					};
+				});
+			}
+		}
+			
+	});
+	vm.init();
+	//轮播图
+    setTimeout(function(){
+		var slide = new auiSlide({
+			container:document.getElementById("aui-slide"),
+			// "width":300,
+			"height":240,
+			"speed":300,
+			"pageShow":true,
+			"pageStyle":'dot',
+			"loop":true,
+			'dotPosition':'center' 
+		})	
+	},500);
+	//下拉刷新
+   var pullRefresh = new auiPullToRefresh({
+		container: document.querySelector('.aui-refresh-content'),
+		triggerDistance: 100
+	},function(ret){
+		if(ret.status=="success"){
+			vm.init();
+			setTimeout(function(){
+				pullRefresh.cancelLoading(); //刷新成功后调用此方法隐藏	
+			},500);
+		}
+	})
+	//上啦加载更多
+	//滚动事件触发
+    window.onscroll = function() {
+        if(getScrollTop() + getClientHeight() == getScrollHeight()) {
+			vm.onReachBottom(); 
+		}
+    }
+</script>
+</html>

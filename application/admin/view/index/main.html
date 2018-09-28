@@ -1,0 +1,70 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit" ng-app="hd" ng-controller="ctrl">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>控制面版</legend>
+    </fieldset>
+</div>
+<div class="admin-main layui-anim layui-anim-upbit">
+    <div class="table-responsive">
+        <table class="layui-table" lay-even lay-skin="line">
+            <colgroup>
+                <col width="40%">
+                <col>
+            </colgroup>
+            <tbody>
+			<tr>
+                <td>当前管理员</td>
+                <td>{$session['username']}
+					<a href="{:url('index/edit')}" style="margin-left:20px" class="layui-btn layui-btn-warm layui-btn-radius">修改密码</a>
+				</td>
+            </tr>
+            <tr>
+                <td>网站域名</td>
+                <td>{$config.url}</td>
+            </tr>
+            <tr>
+                <td>网站目录</td>
+                <td>{$config.document_root}</td>
+            </tr>
+            <tr>
+                <td>服务器操作系统</td>
+                <td>{$config.server_os}</td>
+            </tr>
+            <tr>
+                <td>服务器端口</td>
+                <td>{$config.server_port}</td>
+            </tr>
+            <tr>
+                <td>服务器IP</td>
+                <td>{$config.server_ip}</td>
+            </tr>
+            <tr>
+                <td>WEB运行环境</td>
+                <td>{$config.server_soft}</td>
+            </tr>
+            <tr>
+                <td>MySQL数据库版本</td>
+                <td>{$config.mysql_version}</td>
+            </tr>
+            <tr>
+                <td>运行PHP版本</td>
+                <td>{$config.php_version}</td>
+            </tr>
+
+            <tr>
+                <td>最大上传限制</td>
+                <td>{$config.max_upload_size}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+{include file="common/foot"/}
+<script>
+    layui.use('table', function() {
+        var table = layui.table;
+    })
+</script>
+</body>
+</html>

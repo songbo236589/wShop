@@ -1,0 +1,654 @@
+---------------------------------------------------------------
+[ 2018-09-28T17:06:51+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：2,374.42kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'mp_zihai029_com'@'localhost' (using password: YES)[D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-09-28T17:06:51+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：2,374.04kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'mp_zihai029_com'@'localhost' (using password: YES)[D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-09-28T17:07:34+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,649.84kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\index\index.html [ array (
+  0 => 'site_name',
+  1 => 'background_title',
+  2 => 'session',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  (  menustatus=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `background_title` FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:07:40+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：2,517.66kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\index\index.html [ array (
+  0 => 'site_name',
+  1 => 'background_title',
+  2 => 'session',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `background_title` FROM `tp_config` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:08:27+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：2,517.66kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\index\index.html [ array (
+  0 => 'site_name',
+  1 => 'background_title',
+  2 => 'session',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `background_title` FROM `tp_config` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:08:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/main.html
+[ info ] www.wshop.com/admin/index/main.html [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：2,569.27kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\index\main.html [ array (
+  0 => 'site_name',
+  1 => 'config',
+  2 => 'session',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:08:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/logout.html
+[ info ] www.wshop.com/admin/index/logout.html [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：2,446.81kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->logout[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:08:29+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index.html
+[ info ] www.wshop.com/admin/login/index.html [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,511.44kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T17:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,576.20kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T17:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.wshop.com/ [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,576.47kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-28T17:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index.html
+[ info ] www.wshop.com/admin/login/index.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,295.35kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\login\index.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `site_name`,`background_title`,`background_image` FROM `tp_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index.html
+[ info ] www.wshop.com/admin/login/index.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,169.73kb] [文件加载：59]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\login\index.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `site_name`,`background_title`,`background_image` FROM `tp_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:10:16+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/login/index.html
+[ info ] www.wshop.com/admin/login/index.html [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：2,509.40kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wshop.com',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'm44y',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`pwd`,`is_open`,`group_id` FROM `tp_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `status` FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `login_ip`='127.0.0.1'  WHERE  `id` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:10:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/index.html
+[ info ] www.wshop.com/admin/index/index.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：2,518.94kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.000000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\index\index.html [ array (
+  0 => 'site_name',
+  1 => 'background_title',
+  2 => 'session',
+  3 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `background_title` FROM `tp_config` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-28T17:10:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/main.html
+[ info ] www.wshop.com/admin/index/main.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：2,448.91kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\CORS @app_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wshop/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; PHPSESSID=5m2e38qlj7lpreee11otf5da44; skin=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wshop.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\phpStudy\PHPTutorial\WWW\wshop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wshop/application/admin\view\index\main.html [ array (
+  0 => 'site_name',
+  1 => 'config',
+  2 => 'session',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=wshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_config` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `site_name` FROM `tp_config` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000000s ]

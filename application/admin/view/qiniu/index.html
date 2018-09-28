@@ -1,0 +1,93 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>七牛图片上传</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+		<div class="layui-form-item">
+            <label class="layui-form-label">单图</label>
+            <input type="hidden" lay-verify="image" name="image" id="image" value="">
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="adBtn"><i class="icon icon-upload3"></i>点击上传</button>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" id="adPic"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">视频</label>
+            <input type="hidden" lay-verify="video" name="video" id="video" value="">
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="test5"><i class="icon icon-upload3"></i>点击上传</button>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" id="adPic"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="videoList"></div>
+		<div class="layui-progress layui-progress-big" id="layui-progress-big" style="width:50%;display:none;" lay-showpercent="true" lay-filter="demo">
+			<div class="layui-progress-bar layui-bg-red" lay-percent="0%"></div>
+		</div>
+		
+    </form>
+</div>
+{include file="common/foot"/}
+<script>
+    layui.use(['form', 'layer','upload','element'], function () {
+		var form = layui.form, $ = layui.jquery, upload = layui.upload,element = layui.element;
+		//单图上传
+		upload.render({
+			elem: '#adBtn',
+			url: "{:url('UpFiles/qiNiuPic')}",
+			done: function(res){
+				if(res.errorCode==8888){			
+					$('#adPic').attr('src',res.url);
+					$('#image').val(res.url);
+					layer.msg(res.msg,{time:1000,icon:1});
+				}else{
+					$('#adPic').attr('src','');
+					layer.msg(res.msg,{time:2000,icon:2});
+				}
+			}
+		});
+        upload.render({
+			elem: '#test5'
+			,url: "{:url('UpFiles/video')}"
+			,accept: 'video' //视频
+			,before: function(input){
+				$('#layui-progress-big').css('display','block');
+				var n = 0;
+				timer = setInterval(function(){  
+					if(n<99){
+						n += 1;
+					}
+					element.progress('demo', n+'%');
+				},1000);
+			}
+			,done: function(res){
+				if(res.errorCode==8888){
+					clearInterval(timer);
+					element.progress('demo', '100%');
+					var html = '<video controls preload="auto" width="400px" height="300px">';
+					html += '<source src="'+res.url+'" type="video/mp4"/>';
+					html += '</video>';
+					$('#videoList').html(html);
+					$('#video').val(res.url);
+					layer.msg(res.msg,{time:1000,icon:1});
+				}else{
+					element.progress('demo', '0%');
+					$('#videoList').html('');
+					$('#video').val('');
+					layer.msg(res.msg,{time:2000,icon:2});
+				}			
+			}
+		});
+		
+    })
+</script>
+</body>
+</html>

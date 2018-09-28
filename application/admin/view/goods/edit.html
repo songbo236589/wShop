@@ -1,0 +1,222 @@
+{include file="common/head"/}
+<style type="text/css">
+	.upload-icon-img{
+		width:120px;
+	}
+	.upload-pre-item{
+		position: relative;
+	}
+	.upload-pre-item .img{
+		margin-top: 5px;
+		width: 116px;
+		height: 76px;
+	}
+	.upload-pre-item i {
+		position: absolute;
+		cursor: pointer;
+		top: 5px;
+		background: #2F4056;
+		padding: 2px;
+		line-height: 15px;
+		text-align: center;
+		color: #fff;
+		margin-left: 1px;
+		/* float: left; */
+		filter: alpha(opacity=80);
+		-moz-opacity: .8;
+		-khtml-opacity: .8;
+		opacity: .8;
+		transition: 1s;
+	}
+	.upload-pre-item,.upload-icon-img{
+		width:120px;
+		float: left;
+		margin-left: 8px;
+	}
+</style>
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>编辑商品</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane">
+		<input name="id" type="hidden" value="{$info.id}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品类型</label>
+            <div class="layui-input-4">
+                <select name="goods_category_id" lay-verify="required">
+                    <option value="">请选择</option>
+                    {volist name="goods_category" id="goods_category"}
+                        <option {if condition="$info['goods_category_id'] eq $goods_category['id']"}selected{/if} value="{$goods_category['id']}">{$goods_category.name}</option>
+                    {/volist}
+                </select>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">商品名称</label>
+            <div class="layui-input-4">
+                <input type="text" maxlength="15" lay-verify="required" name="name" value="{$info.name}" placeholder="请输入商品名称" class="layui-input">
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">单图</label>
+            <input type="hidden" lay-verify="image" name="image" id="image" value="{$info.image}">
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="adBtn"><i class="icon icon-upload3"></i>点击上传</button>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;推荐图片大小182*154</span>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" src="__PUBLIC__{$info.image}" id="adPic">
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">多图</label>
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="upload_img"><i class="icon icon-upload3"></i>点击上传</button>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;推荐图片大小414*193</span>
+                </div>
+				<div id="upload_img_list">
+					{volist name="imagesInfo" id="imagesInfo"}
+					<dd class="upload-icon-img">
+						<div class="upload-pre-item">
+							<i onclick="deleteImg($(this))" class="layui-icon"></i>
+							<img src="__PUBLIC__{$imagesInfo}" class="img" ><input type="hidden" name="images[]" value="{$imagesInfo}" />
+						</div>
+					</dd>
+					{/volist}
+				</div>
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">本店售价</label>
+            <div class="layui-input-4">
+                <input type="text" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" maxlength="11" lay-verify="required" name="shop_price" value="{$info.shop_price}" placeholder="请输入本店售价" class="layui-input">
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">市场价</label>
+            <div class="layui-input-4">
+                <input type="text" onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" maxlength="11" lay-verify="required" name="market_price" value="{$info.market_price}" placeholder="请输入市场价" class="layui-input">
+            </div>
+        </div>
+		<div class="layui-form-item">
+            <label class="layui-form-label">库存</label>
+            <div class="layui-input-4">
+                <input type="text" onkeyup="this.value=this.value.replace(/\D/gi,&quot;&quot;)" maxlength="11" lay-verify="required" name="store_count" value="{$info.store_count}" placeholder="请输入库存" class="layui-input">
+            </div>
+        </div>
+		<div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">图文详情</label>
+            <div class="layui-input-block">
+                <script id="graphic_details" style="height:400px;width:95%;" type="text/plain"   name="graphic_details" class="layui-textarea">{$info.graphic_details}</script>
+            </div>
+        </div>
+		<div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">商品参数</label>
+            <div class="layui-input-block">
+                <script id="commodity_parameters" style="height:400px;width:95%;" type="text/plain"   name="commodity_parameters" class="layui-textarea">{$info.commodity_parameters}</script>
+            </div>
+        </div>
+		<!-- 配置文件 -->
+		<script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
+		<!-- 编辑器源码文件 -->
+		<script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
+		<!-- 实例化编辑器 -->
+		<script type="text/javascript">
+			UE.getEditor('graphic_details');
+			UE.getEditor('commodity_parameters');
+		</script>
+        <div class="layui-form-item">
+            <label class="layui-form-label">{:lang('order')}</label>
+            <div class="layui-input-4">
+                <input type="text" onkeyup="this.value=this.value.replace(/\D/gi,&quot;&quot;)" maxlength="11" lay-verify="required" name="sort" value="{$info.sort}" placeholder="从小到大排序" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" id="submit" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                <a href="{:url('index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script src="__STATIC__/common/js/jquery.2.1.1.min.js"></script>
+<script>
+	layui.use(['form', 'layer','upload'], function () {
+		var form = layui.form, $ = layui.jquery, upload = layui.upload;
+		form.verify({	
+			image: function(value){  
+				if(value == ''){  
+					return '请上传单图！';  
+				}  
+			}	
+		});
+		form.on('submit(submit)', function (data) {
+			$("#submit").attr({ disabled: "disabled" });
+			var loading = layer.load(1, {shade: [0.1, '#fff']});
+			$.post("", data.field, function (res) {
+				layer.close(loading);
+				if (res.errorCode == 8888) {
+					layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+					   location.href = res.url;
+					});
+				}else{
+					$("#submit").removeAttr("disabled");
+					layer.msg(res.msg, {time: 1800, icon: 2});
+				}
+			});
+		});
+		//单图上传
+		upload.render({
+			elem: '#adBtn',
+			url: '{:url("UpFiles/uploadFile")}',
+			done: function(res){
+				if(res.errorCode==8888){
+					var PUBLIC = '__PUBLIC__';
+					$('#adPic').attr('src',PUBLIC + res.url);
+					$('#image').val(res.url);
+					layer.msg(res.msg,{time:1000,icon:1});
+				}else{
+					$('#adPic').attr('src','');
+					layer.msg(res.msg,{time:2000,icon:2});
+				}
+			}
+		});
+	});
+	//多图上传
+    layui.use(['layer','upload'], function(){
+        var layer = layui.layer;
+        var upload = layui.upload;
+        upload.render({ //上传图片
+            elem: '#upload_img',
+            url: "{:url('UpFiles/uploadFiles')}",
+            multiple: true, //是否允许多文件上传。设置 true即可开启。不支持ie8/9
+            auto:true,//自动上传
+            before: function(obj) {
+                layer.msg('图片上传中...', {
+                    icon: 16,
+                    shade: 0.01,
+                    time: 0
+                })
+            },
+            done: function(res) {
+				var PUBLIC = '__PUBLIC__';
+				if(res.errorCode==8888){
+					layer.close(layer.msg(res.msg,{time:2000,icon:1}));
+					$('#upload_img_list').append('<dd class="upload-icon-img" ><div class="upload-pre-item"><i onclick="deleteImg($(this))"   class="layui-icon"></i><img src="' + PUBLIC + res.url + '" class="img" ><input type="hidden" name="images[]" value="' + res.url + '" /></div></dd>');
+				}else{
+					layer.close(layer.msg(res.msg,{time:2000,icon:2}));
+				}
+            }
+            ,error: function(){
+                layer.msg('上传错误！');
+            }
+        });
+    });
+    function deleteImg(obj){
+        obj.parent().parent('.upload-icon-img').remove();
+    }
+</script>
