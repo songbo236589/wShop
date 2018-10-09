@@ -1,0 +1,170 @@
+.cart-box {
+  overflow-x:hidden;
+  margin-bottom:92rpx;
+  font-size:28rpx;
+}
+
+.cart-item{
+  display:flex;
+  padding:20rpx;
+  padding-left:0;
+  background-color:#fff;
+  border-bottom:1rpx solid #D0D0D7;
+  height:186rpx;
+
+}
+
+.cart-item-main{
+  width:100%;
+  display:flex;
+}
+.cart-item-checkbox{
+  width:84rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.cart-item-checkbox image {
+  height:44rpx;
+  width:44rpx;
+}
+
+
+.cart-item-img {
+  width:186rpx;
+  height:100%;
+  background-color:#F5F6F5;
+  border-radius:4rpx;
+}
+
+.cart-item-img image{
+  width:100%;
+  height:100%;
+}
+
+.cart-item-word{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:8rpx 0;
+  margin:0 20rpx;
+  box-sizing:border-box;
+  color:#454553;
+}
+
+
+.title-box{
+  display:flex;
+  justify-content:space-between;
+}
+
+
+.bottom-box{
+  font-size:24rpx;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.cart-item-counts{
+  width:100%;
+  display:flex;
+  height: 36rpx;
+  justify-content:space-between;
+  text-align:center;
+}
+
+.cart-item-counts .btns{
+  width: 36rpx;
+  height: 36rpx;
+}
+.btns image{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+} 
+.cart-item-counts>view {
+  padding: 0 50rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.cart-item-counts .counts {
+  color:#454553;
+  font-size:32rpx;
+  line-height: 36rpx;
+  box-sizing:border-box;
+}
+
+/* 底部 ------------------------------------------------------ */
+.all-accounts-box>view {
+  display:flex;
+  align-items:center;
+}
+.footer-account-box {
+  position:fixed;
+  bottom:0;
+  height:92rpx;
+  width:100%;
+  display:flex;
+  border-top:1rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+}
+
+
+.all-select {
+  font-size:28rpx;
+  width:40%;
+}
+
+
+.all-select image{
+  height:48rpx;
+  width:48rpx;
+  margin:0 20rpx;
+}
+
+.all-price-submit{
+  width:60%;
+}
+.accounts-btn,.price-text,.arrow-icon {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+}
+
+.accounts-btn{
+  width:60%;
+  font-size:32rpx;
+  border-right:3rpx dotted #fff;
+  background-color:#FF4E22; 
+  color: #ffffff;
+
+}
+
+.price-text{
+  width:40%;
+  font-size:28rpx;
+  margin-left:10rpx;
+  color: #FF4E22;
+}
+
+
+
+
+.add_cart{
+  width: 38%;
+  height: 66rpx;
+  text-align: center;
+  margin: 20rpx auto;
+  background-color: #FF4E22;
+  border-radius: 10rpx;
+  color: #ffffff;
+  line-height: 66rpx;
+}

@@ -1,0 +1,45 @@
+<view class="location"></view>
+<view class='add_location' bindtap='add_location'>导入微信地址</view>
+<view class='add_location' bindtap='add_location_list'>新增地址</view>
+
+<view class="cart-box">
+  <block wx:for="{{locationArr}}" wx:key="">
+    <view class="cart-item">
+      <view class="cart-item-main">
+        <view class="cart-item-checkbox">
+          <image bindtap='status' data-id="{{item.id}}" src="{{item.status==1?'/images/logo/circle@selected.png':'/images/logo/circle@noselected.png'}}"></image>
+        </view>
+        <view class="cart-item-word">
+            <view class="title-box">
+              <text>联系人：{{item.userName}}</text>
+              <text>联系电话：{{item.telNumber}}</text>
+            </view> 
+            <view class="title-box">
+              <text>地址：{{item.provinceName}}{{item.cityName}}{{item.countyName}}</text>
+            </view> 
+            <view class="title-box">
+              <text>详细地址：{{item.detailInfo}}</text>
+            </view> 
+            <view class="operation">
+                <view class="operation-delete" bindtap='locationDelete' data-id="{{item.id}}">删除</view>
+            </view> 
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="weui-tab__panel" wx:if="{{dataErr}}">
+  <image src="/images/logo/data.png"></image>
+  <text>暂无数据...</text>
+</view>
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>
+
+  

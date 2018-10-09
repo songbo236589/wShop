@@ -1,0 +1,125 @@
+.category-box{
+  display:flex;
+  height:100vh;
+  overflow:hidden;
+}
+.left-box-border{
+  height:77rpx;
+  width: 3px;
+  background-color:#FF4E22; 
+  position:absolute;
+  content:" ";
+  left:0;
+  top:0;
+  -webkit-transition:-webkit-transform .3s;
+  transition:-webkit-transform .3s;
+  transition:transform .3s;
+  transition:transform .3s, -webkit-transform .3s;
+}
+.left-box{
+  flex:0 0 150rpx;
+  border-right:1rpx solid #D8D8D8;
+  font-weight: 600;
+  overflow: auto;
+}
+
+.menu-item {
+  padding:20rpx 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28rpx;
+}
+
+.selected {
+  color:#FF4E22;
+}
+
+
+.right-box{
+  flex:1;
+  transition:all 500ms ease-in-out;
+}
+
+
+.foods-type-box{
+  height:100vh;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+.item_list{
+  width:90%;
+  margin: 10rpx 5%;
+}
+.item_box{
+  display: flex;  
+  flex-wrap: wrap;/*换行 */
+  justify-content: space-between;
+  /* 项目在主轴上的对齐方式(主轴究竟是哪个轴要看属性flex-direction的设置了)
+
+flex-start：在主轴上由左或者上开始排列
+
+flex-end：在主轴上由右或者下开始排列
+
+center：在主轴上居中排列
+
+space-between：在主轴上左右两端或者上下两端开始排列
+
+space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。 */
+}
+.item_info{
+  min-height:400rpx;
+  width:49%;
+  border-radius:10rpx;
+  background-color:#eee;
+
+  margin: 20rpx 0 0 0;
+}
+.item_image{
+  width: 100%;
+  height: 280rpx;
+}
+.item_bottom{
+  width: 94%;
+  margin: 0 auto;
+  font-size: 26rpx;
+   padding-bottom: 10rpx;
+  
+}
+.item_text{
+  min-height: 60rpx;
+  word-break:break-all;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+  line-height:150%;
+  
+}
+.item_money{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rpx;
+}
+.item_money_now{
+  color: #FF4E22;
+}
+.item_money_before{
+  color: #999;
+  text-decoration:line-through;
+}
+.item_money_volume{
+  color: #999;
+}
+
+
+
+

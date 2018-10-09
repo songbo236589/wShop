@@ -1,0 +1,105 @@
+<view class="container">
+  <view class="detail-header-box">
+    <!-- 购物车 -->
+    <view class="fixed-btns-box" bindtap='cart'>
+      <view class="fiexd-cart {{isShake?'animate':''}}">
+        <image src="/images/logo/cart@top.png"></image>
+        <view wx:if="{{num>0}}">{{num}}</view>
+      </view>
+    </view>
+    <view class="share" bindtap='shares'>
+      <image src='/images/logo/share.png'></image>
+    </view>
+    <!-- 首图 -->
+    <swiper indicator-color="rgba(255,78,34,1)" indicator-active-color="#ffffff" vertical="{{false}}"  indicator-dots="true" autoplay="true" interval="5000" circular="true">
+      <block wx:for="{{getGoodsContent.images}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 添加购物车 -->
+    <view class='cart-box'>
+      <view class="product-counts">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{countsArray}}">
+          <view>
+            <text class='counts-tips'>数量</text>
+            <text class="counts-data">{{productCounts}}</text>
+            <image class="counts-icon" src="/images/logo/arrow@down.png"></image>
+          </view>
+        </picker>
+      </view>
+      <view class="middle-border"></view>
+      <view class="add-cart-btn" bindtap="onAddingToCartTap">
+        <text>加入购物车</text>    
+        <image class="cart-icon" src="/images/logo/cart.png"></image>  
+      </view>  
+    </view>
+    <!-- 商品详细资料 -->
+    <view class="basic-info-box">
+      <view class="stock">库存：{{getGoodsContent.store_count}}</view>
+      <view class="name">{{getGoodsContent.name}}</view>
+      <view class="price">
+        <view class="money_now">￥{{getGoodsContent.shop_price}}</view>
+        <view class="money_before">￥{{getGoodsContent.market_price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-tab">
+  <view class="weui-navbar">
+    <block wx:for-items="{{tabs}}" wx:key="{{ index }}">
+      <view data-id="{{ index }}" class="weui-navbar__item {{ activeIndex == index ? 'weui-bar__item_on' : '' }}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{item}}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{ sliderLeft }}px; transform: translateX({{ sliderOffset }}px); -webkit-transform: translateX({{ sliderOffset }}px);"></view>
+  </view>
+</view>
+<view style='width:96%;margin:0 auto;'>
+  <rich-text wx:if="{{activeIndex==0}}" nodes="{{getGoodsContent.graphic_details}}"></rich-text>
+  <rich-text wx:elif="{{activeIndex==1}}" nodes="{{getGoodsContent.commodity_parameters}}"></rich-text>
+  <view wx:elif="{{activeIndex==2}}">
+    <block wx:for="{{getGoodsContent.comment}}" wx:for-item="itemComment" wx:key="">
+      <view class="commentLsit">
+        <view class="cover">
+          <image src='{{itemComment.avatarUrl}}'></image>
+          <view>{{itemComment.nickName}}</view>
+        </view>
+        <view class="commentx">
+          <view>评分：</view>
+          <view class="xx">
+            <block wx:for="{{starMap}}" wx:key="">
+              <view wx:if="{{itemComment.star>=item}}"><image src='/images/logo/x1.png'></image></view>
+              <view wx:if="{{itemComment.star<item}}"><image src='/images/logo/x.png'></image></view>
+            </block>
+          </view>
+        </view>
+        <view class="commentx">
+          <view>评论：{{itemComment.content}}</view>
+        </view>  
+      </view>
+    </block>
+    <view class="weui-tab__panel"  wx:if="{{dataErr}}">
+      <image src="/images/logo/data.png"></image>
+      <text style='margin-bottom: 100rpx;'>暂无评论...</text>
+    </view>
+  </view>
+</view> 
+<view class='myActionSheet' bindtap='cancelShare' animation="{{animation}}">
+  <view class='ul' catchtap="nothing">
+    <button open-type='share' style="position:absolute;bottom:100rpx;">
+      微信好友
+    </button>
+    <button bindtap='cancelShare' style="position:absolute;bottom:0rpx;">取消</button>
+  </view>
+</view>
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>
+
+

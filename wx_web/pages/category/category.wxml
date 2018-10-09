@@ -1,0 +1,60 @@
+<view class="container">
+    <view class="category-box">
+       <view class="left-box-border" style="transform: translateY({{ offsetTop }}px); -webkit-transform: translateY({{ sliderOffset }}px);">
+       </view>
+      <view class="left-box">
+        <view wx:for="{{goodsCategoryArr}}" wx:key="">
+          <view  class="menu-item {{id==item.id?'selected':''}}" bindtap='changeCategory' data-index="{{index}}" data-id="{{item.id}}">{{item.name}}
+          </view>    
+        </view>       
+      </view>
+        <view class="right-box" style='transform:translate(0,{{tanslate}});'>
+          <scroll-view scroll-y="true" bindscrolltolower="scroll" wx:for="{{goodsCategoryArr}}" wx:key="" class="foods-type-box">
+              <view class="item_list">
+                <view class="item_box">
+                  <block wx:for="{{goodsArr}}" wx:key="">
+                    <view class="item_info" bindtap='product' data-id="{{item.id}}">
+                      <image src="{{item.image}}" class="item_image"></image>
+                      <view class="item_bottom">
+                        <view class="item_text">{{item.name}}</view>
+                        <view class="item_money">
+                          <text class="item_money_now">￥{{item.shop_price}}</text>
+                          <text class="item_money_before">￥{{item.market_price}}</text>
+                        </view>
+                        <view class="item_money">
+                          <text class="item_money_now">热销中</text>
+                          <text class="item_money_volume">销量：{{item.sales_sum}}</text>
+                        </view>
+                      </view>
+                    </view>
+                  </block>
+                </view>
+              </view>
+              <view class="loading_box1" wx:if="{{loading_box}}">
+                <view class="loading1"></view>
+                <view class="loading1_list">{{loading_box_title}}</view>
+              </view>
+              <view class="weui-tab__panel" wx:if="{{dataErr}}">
+                <image src="/images/logo/data.png"></image>
+                <text>暂无数据...</text>
+              </view>
+          </scroll-view>
+          
+        </view>
+      </view>
+      
+  </view>
+
+
+
+
+ 
+
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>

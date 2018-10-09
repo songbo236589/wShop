@@ -1,0 +1,58 @@
+<!-- 轮播图 -->
+<swiper indicator-color="rgba(255,78,34,1)" indicator-active-color="#ffffff" vertical="{{false}}"  indicator-dots="true" autoplay="true" interval="5000" circular="true">
+  <block wx:for="{{bannerArr}}" wx:key="">
+    <swiper-item>
+      <image src="{{item.images}}" bindtap='product' data-id="{{item.id}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 最近新品 -->
+<view class="item_list">
+  <view class="header_text">新品上线</view>
+  <view class="item_box">
+    <block wx:for="{{goodsArr}}" wx:key="">
+      <view class="item_info" bindtap='product' data-id="{{item.id}}">
+        <image src="{{item.image}}" class="item_image"></image>
+        <view class="item_bottom">
+          <view class="item_text">{{item.name}}</view>
+          <view class="item_money">
+            <text class="item_money_now">￥{{item.shop_price}}</text>
+            <text class="item_money_before">￥{{item.market_price}}</text>
+          </view>
+          <view class="item_money">
+            <text class="item_money_now">热销中</text>
+            <text class="item_money_volume">销量：{{item.sales_sum}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+
+
+<view class="loading_box1" wx:if="{{loading_box}}">
+  <view class="loading1"></view>
+  <view class="loading1_list">{{loading_box_title}}</view>
+</view>
+
+
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>
+
+
+
+<view class="login" hidden="{{login}}">
+  <view class="login_box">
+    <view class="login_title">微信授权登陆</view>
+    <button wx:if="{{canIUse}}" class="login_button" open-type ="getUserInfo" lang="zh_CN" bindgetuserinfo="login">登录</button>
+    <view class="login_error" wx:else>请升级微信版本</view>
+  </view>
+</view>

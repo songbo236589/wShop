@@ -1,0 +1,129 @@
+.weui-tab{
+  position: relative;
+  height: 95rpx;
+}
+.weui-navbar{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  position:absolute;
+  top:0;
+  width:100%;
+  border-bottom:1rpx solid #CCCCCC;
+}
+.weui-navbar__item{
+  position:relative;
+  display:block;
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  flex:1;
+  padding:13px 0;
+  text-align:center;
+  font-size:0;
+}
+
+.weui-navbar__title{
+  display:inline-block;
+  font-size:15px;
+  max-width:8em;
+  width:auto;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+  color:#FF4E22;
+}
+.weui-navbar__slider {
+  position:absolute;
+  content:" ";
+  left:0;
+  bottom:0;
+  width:12%;
+  height:3px;
+  background-color:#FF4E22;
+  -webkit-transition:-webkit-transform .3s;
+  transition:-webkit-transform .3s;
+  transition:transform .3s;
+  transition:transform .3s, -webkit-transform .3s;
+
+}
+
+
+
+
+
+/*-----------------------------------------主题代码------------------------------------------*/
+.cart-box{
+  overflow-x:hidden;
+  font-size:28rpx;
+  border-bottom:1rpx solid #D0D0D7;
+}
+
+.cart-item{
+  display:flex;
+  padding:20rpx;
+  background-color:#ffffff;
+}
+
+.cart-item-main{
+  width:100%;
+  display:flex;
+}
+
+.cart-item-word{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:8rpx 0;
+  margin:0 20rpx;
+  box-sizing:border-box;
+  color:#454553;
+}
+
+.title-box{
+  display:flex;
+  justify-content:space-between;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom:1rpx solid #D0D0D7;
+}
+.goods_list{
+  width: 100%;
+   border-bottom:1rpx solid #D0D0D7;
+}
+.goods_list>text{
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.goods_name{
+  width: 100%;
+}
+.goods_shop_price,goods_num{
+  width: 50%;
+}
+.operation{
+  height: 45rpx;
+  display:flex;
+  justify-content:flex-end;
+  
+}
+.operation view{
+  color: #ffffff;
+  line-height: 45rpx;
+  width: 144rpx;
+  height: 100%;
+  text-align: center;
+  margin-left: 30rpx;
+  margin-top: 20rpx; 
+}
+.orderDelete{
+  background-color:#FF4E22;
+}
+.toPay{
+  background-color:#FFB800;
+}

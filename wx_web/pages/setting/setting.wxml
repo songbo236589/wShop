@@ -1,0 +1,16 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="page-section-title">
+      允许使用权限
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">通讯地址</view>
+        <view class="weui-cell__ft">
+          <switch checked="{{address}}" bindchange="address"></switch>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- 主体 -->
+  <view class="cart-box">
+    <block wx:for="{{cartArr}}" wx:key="">
+      <view class="cart-item">
+        <view class="cart-item-main">
+          <view class="cart-item-checkbox">
+            <image bindtap='status' data-id="{{item.id}}" data-status="{{item.status}}" src="{{item.status==1?'/images/logo/circle@selected.png':'/images/logo/circle@noselected.png'}}"></image>
+          </view>
+          <view class="cart-item-img">
+            <image src="{{item.image}}"></image>
+          </view>
+          <view class="cart-item-word">
+            <view class="title-box">
+                <text>{{item.name}}</text>
+                <text>￥{{item.shop_price}}</text>
+            </view> 
+            <view class="bottom-box">
+                <view class="cart-item-counts">
+                  <view class="btns"><image bindtap='subtract' data-id="{{item.id}}" src='/images/logo/subtract.png'></image></view>
+                  <view class="counts">{{item.num}}</view>
+                  <view class="btns"><image bindtap='add' data-id="{{item.id}}" src='/images/logo/add.png'></image></view>
+                </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="weui-tab__panel" wx:if="{{dataErr}}">
+      <image src="/images/logo/data.png"></image>
+      <text>暂无数据...</text>
+      <view class='add_cart' bindtap='add_cart'>去购物</view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="footer-account-box all-accounts-box">
+    <view class="all-select">
+      <image bindtap='all' src="{{cartAll==1?'/images/logo/circle@selected.png':'/images/logo/circle@noselected.png'}}"></image>
+      <text>全选({{total_num}})</text>
+    </view>
+    <view class="all-price-submit">
+      <view class="price-text">￥{{total_price}}</view>  
+      <view class="accounts-btn" bindtap='PayCart'>立即结算</view>
+      
+    </view>
+  </view>
+
+</view>
+
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>

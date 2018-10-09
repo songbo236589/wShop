@@ -1,0 +1,131 @@
+.add_location{
+  width: 92%;
+  height: 66rpx;
+  text-align: center;
+  margin: 20rpx auto;
+  background-color: #FF4E22;
+  border-radius: 10rpx;
+  color: #ffffff;
+  line-height: 66rpx;
+}
+
+
+.location_from{
+  padding-top: 40rpx;
+  width: 100%;
+}
+.location_list{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 66rpx;
+  border-bottom: 1rpx solid #D8D8D8;
+}
+.location_names{
+  width: 30%;
+  line-height: 66rpx;
+  height: 100;
+  margin-left: 2%;
+}
+.location_input{
+  width: 68%;
+  height: 100%;
+}
+.location_view{
+  width: 68%;
+  height: 100%;
+  line-height: 66rpx;
+}
+
+
+
+
+/* 省市区联动 */
+.infoText{
+    margin-top: 20rpx;
+    text-align: center;
+    width: 100%;
+    justify-content: center; 
+}
+
+picker-view{
+  background-color: white;
+  padding: 0;
+  width: 100%; 
+  height: 380rpx;
+  bottom: 0;
+  position: fixed;
+}
+
+picker-view-column view{
+  vertical-align:middle; 
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.animation-element-wrapper {
+  display: flex;  
+  position: fixed;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.animation-element {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 470rpx;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.animation-button {
+  margin-top: 20rpx;
+  top:20rpx;
+  width: 400rpx;
+  height: 100rpx; 
+  line-height: 100rpx; 
+  align-items:center;
+}
+
+
+.animation-element-wrapper text{
+  color: #999999;
+  display: inline-flex;  
+  position: fixed;
+  margin-top: 20rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 34rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-bt{
+  left: 30rpx;
+}
+.right-bt {
+  right: 30rpx;
+}
+
+.line{
+  display: block;
+  position: fixed;
+  height: 1rpx;
+  width: 100%;
+  margin-top: 89rpx; 
+  background-color: #eeeeee;
+}
+
+
+/* ----------------------------------------- */
+
+

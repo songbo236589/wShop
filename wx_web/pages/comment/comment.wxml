@@ -1,0 +1,32 @@
+
+<block wx:for="{{commentArr}}" wx:for-item="itemComment" wx:for-index="indexComment" wx:key="">
+  <view class="commentLsit">
+    <view>商品名称：{{itemComment.name}}</view>
+    <view class="commentx">
+      <view>商品评分：</view>
+      <view class="xx">
+        <block wx:for="{{starMap}}" wx:key="">
+          <view wx:if="{{itemComment.star>=index+1}}" bindtap="myStarChoose" data-index="{{indexComment}}" data-star="{{index+1}}"><image src='/images/logo/x1.png'></image></view>
+          <view wx:if="{{itemComment.star<index+1}}" bindtap="myStarChoose" data-index="{{indexComment}}" data-star="{{index+1}}"><image src='/images/logo/x.png'></image></view>
+        </block>
+      </view>
+      <view>{{starMap[itemComment.star-1]}}</view>
+    </view>
+    <textarea placeholder="输入评论" bindinput="content" data-index="{{indexComment}}" style="height: 3em;border:1rpx solid #D0D0D7;width:100%;" selection-start="-1" selection-end="-1" selection-end="-1" cursor="-1" start="-1" end="-1"></textarea>
+  </view>
+</block>
+
+
+<view>
+  <view class='add_location' bindtap='commentT'>提交</view>
+</view>
+
+
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>

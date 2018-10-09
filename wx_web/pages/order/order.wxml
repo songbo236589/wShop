@@ -1,0 +1,78 @@
+<view class="weui-tab">
+  <view class="weui-navbar">
+   
+    <block wx:for-items="{{ tabs}}" wx:key="{{ index }}">
+      <view data-id="{{ index }}" class="weui-navbar__item {{ status == index ? 'weui-bar__item_on' : '' }}" bindtap="tabClick">
+          <view class="weui-navbar__title">{{ item }}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{ sliderLeft }}px; transform: translateX({{ sliderOffset }}px); -webkit-transform: translateX({{ sliderOffset }}px);"></view>
+
+  </view>
+
+  
+</view>
+
+<view class="order_list">
+
+
+</view>
+
+
+
+<block wx:for="{{orderArr}}" wx:key="">
+  <view class="cart-box">
+    <view class="cart-item">
+      <view class="cart-item-main">
+        <view class="cart-item-word">
+            <view class="title-box">
+              <text>订单号：{{item.order_number}}</text>
+              <text>合计：￥{{item.money}}</text>
+            </view> 
+            <view class="title-box">
+              <text>联系人：{{item.userName}}</text>
+              <text>联系电话：{{item.telNumber}}</text>
+            </view> 
+             <view class="title-box">
+              <text>地址：{{item.detailInfo}}</text>
+            </view>
+            <block wx:for="{{item.goods}}" wx:key=""> 
+              <view class="goods_list">
+                <text class="goods_name">商品名称：{{item.name}}</text>
+                <text class="goods_shop_price">商品价格：￥{{item.shop_price}}</text>
+                <text class="goods_num">购买数量：{{item.num}}</text>
+              </view>
+            </block>  
+            <view class="operation" wx:if="{{item.status == 1}}">
+                <view bindtap='orderDelete' class="orderDelete" data-index="{{index}}" data-id="{{item.id}}">取消订单</view>
+                <view bindtap='orderPay' class="toPay" data-id="{{item.id}}">去支付</view>
+            </view> 
+            <view class="operation" wx:if="{{item.status == 3}}">
+                <view bindtap='orderConfirm' class="toPay" data-index="{{index}}" data-id="{{item.id}}">确认收货</view>
+            </view> 
+            <view class="operation" wx:if="{{item.status == 4}}">
+                <view bindtap='comment' class="toPay" data-id="{{item.id}}">去评价</view>
+            </view> 
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+
+<view class="weui-tab__panel" wx:if="{{dataErr}}">
+  <image src="/images/logo/data.png"></image>
+  <text>暂无数据...</text>
+</view>
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>
+<view class="loading_box1" wx:if="{{loading_box}}">
+  <view class="loading1"></view>
+  <view class="loading1_list">{{loading_box_title}}</view>
+</view>

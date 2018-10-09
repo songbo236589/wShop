@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="my-header">
+    <image src='{{user.avatarUrl}}'></image>
+    <text class="name">{{user.nickName}}</text>
+  </view>
+</view>
+ <!-- 主体部分 -->
+  <view class="person-list">
+    <view class="list-item navigator-hover" bindtap="order">
+      <image class="item-image" src="/images/logo/order.png"></image>
+      <text class="item-text">我的订单</text>
+      <view class="item-view-image">
+        <image src='/images/logo/rigth.png'></image>
+      </view>
+    </view>
+    <view class="list-item navigator-hover" bindtap="location">
+      <image class="item-image" src="/images/logo/location.png"></image>
+      <text class="item-text">地址管理</text>
+      <view class="item-view-image">
+        <image src='/images/logo/rigth.png'></image>
+      </view>
+    </view>
+    
+  </view>
+
+<button class="setting" open-type="openSetting">授权设置</button>
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>

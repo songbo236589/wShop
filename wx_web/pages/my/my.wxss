@@ -1,0 +1,76 @@
+.my-header{
+  height: 200rpx;
+  background-color:#FF4E22;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  padding:30rpx;
+  font-size:38rpx;
+}
+.my-header image{
+  height:120rpx;
+  width:120rpx;
+  border-radius:120rpx;
+}
+.my-header text{
+  margin-left:20rpx;
+}
+
+
+
+
+
+
+
+/* 主体部分 列表--------------------------------------------------------------------------------------------*/
+.person-list {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: 30rpx auto;
+}
+.list-item {
+  margin-top: 10rpx;
+  background-color:#ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+  border-radius: 10rpx;
+}
+
+.list-item:hover{
+   background-color:#f0f0f0;
+}
+.item-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+.item-text {
+  color: #000000;
+  font-weight: 600;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+  width: 75%;
+}
+
+.item-view-image{
+  margin-left: 10rpx;
+  width:12px;
+  height:20px;
+}
+
+.item-view-image image{
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+.setting{
+  background-color:#FF4E22;color:#ffffff;width:90%;margin:20rpx auto;
+}

@@ -1,0 +1,57 @@
+<view class="location_from">
+  <view class="location_list">
+    <view class="location_names">收货人：</view>
+    <input type="text" class="location_input" bindinput="userName" maxlength='15' placeholder="姓名" auto-focus></input>
+  </view>
+  <view class="location_list">
+    <view class="location_names">手机号码：</view>
+    <input type="number" class="location_input" placeholder="11位手机号" bindinput="telNumber" maxlength='11'></input>
+  </view>
+  <view class="location_list">
+    <view class="location_names">地区信息：</view>
+    <view class="location_view" style="{{dq=='地区信息'?'color: #888':'color: #818181;'}}" bindtap="translate">{{dq}}</view>
+  </view>
+  <view class="location_list">
+    <view class="location_names">详细地址：</view>
+    <input type="text" class="location_input" bindinput="detailInfo" placeholder="街道门牌信息"></input>
+  </view>
+</view>
+<view class='add_location' bindtap='add_location'>保存</view>
+
+<view class="animation-element-wrapper" animation="{{animation}}" style="visibility:{{show ? 'visible':'hidden'}}" bindtap="hiddenFloatView" data-id="444">
+     <view class="animation-element" catchtap="nono">
+        <text class="left-bt" catchtap="hiddenFloatView" data-id="555">取消</text>
+        <text class="right-bt" catchtap="hiddenFloatView" data-id="666">确定</text>
+          <view class="line"></view> 
+
+        <picker-view indicator-style = "height: 50rpx;" value="{{value}}" bindchange="bindChange" catchtap="nono">
+        <!--省-->
+        <picker-view-column>
+           <view wx:for="{{provinceArr}}" wx:key="">
+             {{item.name}}
+          </view>
+        </picker-view-column>
+        <!--地级市-->
+        <picker-view-column>
+          <view wx:for="{{cityArr}}" wx:key="">
+            {{item.name}}
+          </view>
+        </picker-view-column>
+        <!--区县-->
+        <picker-view-column>
+          <view wx:for="{{countyArr}}" wx:key="">
+            {{item.name}}
+          </view>
+        </picker-view-column>
+        </picker-view>
+    </view>
+  </view>
+
+
+<view class="loading" hidden="{{loadingHidden}}">
+  <view class="loading_box">
+    <view class="loading3 loading3_1"></view>
+    <view class="loading3 loading3_2"></view>
+    <view class="loading3 loading3_3"></view>
+  </view>
+</view>
